@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Kaiko-website/static/css/main.edd238b7.css",
-    "main.js": "/Kaiko-website/static/js/main.9d5b2c35.js",
+    "main.js": "/Kaiko-website/static/js/main.f6372f3a.js",
     "static/js/453.aaadedc8.chunk.js": "/Kaiko-website/static/js/453.aaadedc8.chunk.js",
     "static/media/clodor.mp4": "/Kaiko-website/static/media/clodor.60cbe2eceef8f9d32ec9.mp4",
     "static/media/basantiforkaiko.mp4": "/Kaiko-website/static/media/basantiforkaiko.43a44ed40ecb9b2018a9.mp4",
@@ -45,22 +45,22 @@
     "static/media/Frame3.png": "/Kaiko-website/static/media/Frame3.f517370517a9e720f972.png",
     "static/media/Clodorinsights.png": "/Kaiko-website/static/media/Clodorinsights.90c44d43176cf04a7e70.png",
     "static/media/Frame404.svg": "/Kaiko-website/static/media/Frame404.a9d101cef8ef129b98ef790cbc2ca24a.svg",
-    "static/media/PinkMark.png": "/Kaiko-website/static/media/PinkMark.988ae3c138491062c8d1.png",
     "static/media/Snake.png": "/Kaiko-website/static/media/Snake.9de96ba7dca3dc5c36a7.png",
     "static/media/Services.png": "/Kaiko-website/static/media/Services.c97e571117f6671d155c.png",
     "static/media/beer.png": "/Kaiko-website/static/media/beer.2fc09b3f515f18c94898.png",
     "static/media/text1.png": "/Kaiko-website/static/media/text1.ddd3ef972b0fc1bb05d3.png",
     "static/media/MainMobile.png": "/Kaiko-website/static/media/MainMobile.f86d3d16f052d8a7d064.png",
+    "static/media/PinkMark.png": "/Kaiko-website/static/media/PinkMark.ab0154a6b792186146e2.png",
     "static/media/Frame1892.png": "/Kaiko-website/static/media/Frame1892.abb5fe3549e556dc32b0.png",
     "static/media/text2.png": "/Kaiko-website/static/media/text2.61abad3d06b9dc5c994b.png",
     "static/media/clenzielements.png": "/Kaiko-website/static/media/clenzielements.cead4f6ae8165b6dcbf2.png",
     "index.html": "/Kaiko-website/index.html",
     "main.edd238b7.css.map": "/Kaiko-website/static/css/main.edd238b7.css.map",
-    "main.9d5b2c35.js.map": "/Kaiko-website/static/js/main.9d5b2c35.js.map",
+    "main.f6372f3a.js.map": "/Kaiko-website/static/js/main.f6372f3a.js.map",
     "453.aaadedc8.chunk.js.map": "/Kaiko-website/static/js/453.aaadedc8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.edd238b7.css",
-    "static/js/main.9d5b2c35.js"
+    "static/js/main.f6372f3a.js"
   ]
 }
