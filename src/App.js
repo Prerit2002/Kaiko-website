@@ -24,6 +24,9 @@ function HomePage() {
       <section className='w-full mx-auto flex flex-col items-center gap-3'>
         <Header />
         <SplineSection />
+        <div className="bg-black text-[#EF4293] bg-black p-5 rounded-lg w-full text-center text-xl">
+          <h1>Namaste</h1>
+        </div>
         <CreativeApproachSection />
         <OurMojoSection />
         <HeroSection />
