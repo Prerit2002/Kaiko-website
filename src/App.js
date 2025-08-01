@@ -1,0 +1,56 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import SplineSection from './components/SplineSection';
+import CreativeApproachSection from './components/CreativeApproachSection';
+import OurMojoSection from './components/OurMojoSection';
+import ShowcaseSection from './components/ShowcaseSection';
+import BombayBanner from './components/BombayBanner';
+import CalloutBanner from './components/CalloutBanner';
+import HeroSection from './components/HeroSection';
+import CollaborativeDesignProcess from './components/CollaborativeProcess';
+import WeirdSnake from './components/WeirdSnake';
+import ServicesSection from './components/ServicesSection';
+import Duggu from './components/Duggu';
+import Dukkaan from './components/Dukkaan';
+import Clodor from './components/Clodor';
+import Clenzi from './components/Clenzi';
+import Bartender from './components/Bartender';
+
+import './App.css';
+
+function HomePage() {
+  return (
+    <div style={{ backgroundColor: '#151515' }} className="min-h-screen text-white p-5">
+      <section className='w-full mx-auto flex flex-col items-center gap-3'>
+        <Header />
+        <SplineSection />
+        <CreativeApproachSection />
+        <OurMojoSection />
+        <HeroSection />
+        <ShowcaseSection />
+        <CalloutBanner />
+        <BombayBanner />
+        <CollaborativeDesignProcess />
+        <WeirdSnake />
+        <ServicesSection />
+      </section>
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/duggu" element={<Duggu />} />
+        <Route path="/dukkaan" element={<Dukkaan />} />
+        <Route path="/clodor" element={<Clodor />} />
+        <Route path="/clenzi" element={<Clenzi />} />
+        <Route path="/bartender" element={<Bartender />} />
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;
