@@ -13,7 +13,7 @@ export default function CreativeApproachSection() {
                 HUM KAUN?
               </div>
             </div>
-            <div className="flex-1 text-2xl md:text-3xl lg:text-4xl font-medium leading-tight relative">
+            <div className="flex-1 text-2xl md:text-3xl lg:text-6xl font-medium leading-tight relative">
               WE <span className="font-bold">DESIGN</span> AND <span className="font-bold">LAUNCH</span><br />
               THE CREATIVELY DIFFERENT
               <span className="absolute right-0 bottom-0 text-black text-base align-middle">by:</span>
@@ -27,7 +27,7 @@ export default function CreativeApproachSection() {
                 APPROACH
               </div>
             </div>
-            <div className="flex-1 text-2xl md:text-3xl lg:text-4xl font-medium leading-tight relative">
+            <div className="flex-1 text-2xl md:text-3xl lg:text-6xl font-medium leading-tight relative">
               LEVERAGING EVERY BIT OF<br />
               DATA
               <span className="absolute right-0 bottom-0 text-black text-base align-middle">to:</span>
@@ -41,7 +41,7 @@ export default function CreativeApproachSection() {
                 GOAL
               </div>
             </div>
-            <div className="text-2xl md:text-3xl lg:text-4xl font-medium leading-tight">
+            <div className="text-2xl md:text-3xl lg:text-6xl font-medium leading-tight">
               EXECUTE UNCONVENTION–<br />
               AL SOLUTIONS
             </div>

@@ -15,7 +15,8 @@ import Dukkaan from './components/Dukkaan';
 import Clodor from './components/Clodor';
 import Clenzi from './components/Clenzi';
 import Bartender from './components/Bartender';
-import Jobs from './components/Jobs';
+import Careers from './components/Careers';
+import About from './components/About';
 import './App.css';
 
 function HomePage() {
@@ -31,11 +32,11 @@ function HomePage() {
         <OurMojoSection />
         <HeroSection />
         <ShowcaseSection />
-        <CalloutBanner />
+        {/* <CalloutBanner />
         <BombayBanner />
         <CollaborativeDesignProcess />
-        <WeirdSnake />
-        <Jobs />
+        <WeirdSnake /> */}
+        {/* <Jobs /> */}
         <ServicesSection />
       </section>
     </div>
@@ -47,6 +48,8 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/career" element={<Careers />} />
+        <Route path="/about" element={<About />} />
         <Route path="/duggu" element={<Duggu />} />
         <Route path="/dukkaan" element={<Dukkaan />} />
         <Route path="/clodor" element={<Clodor />} />

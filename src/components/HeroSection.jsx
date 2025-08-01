@@ -50,7 +50,7 @@ const GrowthSection = () => {
       
       
   return (
-    <div className="min-h-[50vh] w-full text-yellow-400 font-sans py-4">
+    <div className="min-h-[50vh] w-full text-yellow-400 font-sans ">
       {/* Header */}
       <div className="w-full text-center py-2 bg-pink-600 text-white text-sm font-semibold rounded-md mx-auto ">
         WHAT TO EXPECT

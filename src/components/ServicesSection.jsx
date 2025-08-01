@@ -4,9 +4,9 @@ import { ArrowUp } from "lucide-react";
 
 const ServicesSection = () => {
   return (
-    <section id="contact" className="text-white flex flex-col items-center rounded-2xl w-full">
+    <section id="contact" className="text-white flex flex-col items-center rounded-xl w-full ">
       {/* Title */}
-      <div className="bg-black text-center mb-6 w-full rounded-3xl p-6">
+      <div className="bg-black text-center my-3 w-full rounded-3xl p-6">
         <h2 className="text-2xl md:text-4xl font-extrabold">GO TO OUR SERVICES</h2>
         <p className="text-sm mt-1">AKA OUR MOJO</p>
       </div>

@@ -1,7 +1,7 @@
 
 export default function Jobs() {
     return (
-       <section id="jobs" className="text-white flex flex-col items-center rounded-2xl w-full gap-3">
+       <section id="jobs" className="text-white flex flex-col items-center rounded-xl w-full gap-3 mt-2">
             <h2 className="text-pink-600 text-4xl md:text-5xl font-extrabold tracking-tight bg-black py-12 w-full rounded-3xl text-center">
                 SWAGAT HAIN AAPKA
             </h2>

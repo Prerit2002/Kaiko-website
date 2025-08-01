@@ -40,7 +40,7 @@ export default function OurMojoSection() {
         viewport={{ once: true }}
         className="bg-[#007AFF] py-6 rounded-xl"
       >
-        <h2 className="text-3xl md:text-4xl font-extrabold text-[#FFE600]">
+        <h2 className="text-6xl md:text-4xl font-extrabold text-[#FFE600]">
           OUR MOJO
         </h2>
       </motion.div>
@@ -85,7 +85,7 @@ export default function OurMojoSection() {
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.6 }}
         viewport={{ once: true }}
-        className="bg-[#FF00C7] text-[#FFE600] text-xl font-extrabold py-4 px-6 rounded-xl"
+        className="bg-[#FF00C7] text-[#FFE600] text-6xl font-extrabold py-2  px-6 rounded-xl"
       >
         AAGE AAGE DEKHO HOTA HAI KYA
       </motion.div>
