@@ -28,6 +28,7 @@ const HoverCard = ({
   const handleClick = () => {
     if (!comingSoon && redirectUrl) {
       navigate(redirectUrl);
+      window.scrollTo(0, 0);
     }
   };
 
