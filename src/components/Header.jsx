@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import Logo from '../assets/Logo.png';
 import Header1 from '../assets/Header.png';
-import { Link } from 'react-router-dom'; 
+import { Link, useNavigate, useLocation } from 'react-router-dom'; 
 
 const navLinks = [
   { name: 'Services', href: '#' },
@@ -14,7 +14,38 @@ const navLinks = [
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
-
+  const navigate = useNavigate();
+  const location = useLocation();
+  
+  const handleNavClick = (href, linkName) => {
+    // Close mobile menu
+    setIsOpen(false);
+    
+    // If href doesn't start with #, it's not an anchor link
+    if (!href.startsWith('#')) {
+      return;
+    }
+    
+    // If we're already on the home page, just scroll to the element
+    if (location.pathname === '/') {
+      const element = document.getElementById(href.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // Navigate to home page first, then scroll after navigation
+      navigate('/');
+      
+      // Use setTimeout to ensure the page has loaded before scrolling
+      setTimeout(() => {
+        const element = document.getElementById(href.substring(1));
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  };
+  
   return (
     <header className="w-full px-6 py-4 bg-black rounded-2xl text-white relative z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
@@ -28,9 +59,16 @@ export default function Header() {
         {/* Desktop Nav */}
         <nav className="hidden md:flex gap-6 text-pink-500 font-semibold text-sm">
           {navLinks.map((link) => (
-            <a key={link.name} href={link.href} className="hover:text-pink-300 transition">
+            <button
+              key={link.name}
+              onClick={(e) => {
+                e.preventDefault();
+                handleNavClick(link.href, link.name);
+              }}
+              className="hover:text-pink-300 transition cursor-pointer"
+            >
               {link.name}
-            </a>
+            </button>
           ))}
         </nav>
 
@@ -49,16 +87,17 @@ export default function Header() {
       {isOpen && (
         <div className="absolute top-full left-0 w-full  rounded-b-2xl  md:hidden p-6 flex flex-col gap-1 text-yellow-500 font-semibold text-base bg-transparent ">
           {navLinks.map((link) => (
-            <a
+            <button
               key={link.name}
-              href={link.href}
-              className="hover:text-yellow-300 transition bg-black p-3 rounded-lg flex justify-between items-center"
-              onClick={() => setIsOpen(false)} // Close drawer on click
+              onClick={(e) => {
+                e.preventDefault();
+                handleNavClick(link.href, link.name);
+              }}
+              className="hover:text-yellow-300 transition bg-black p-3 rounded-lg flex justify-between items-center cursor-pointer text-left w-full"
             >
-
               {link.name}
               <img src={Header1} alt="Kaiko Studios Logo" className="h-6 w-auto mt-2" />
-            </a>
+            </button>
           ))}
         </div>
       )}
