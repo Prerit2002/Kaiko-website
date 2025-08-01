@@ -1,57 +1,62 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 
 const services = [
   {
-    title: 'DESIGN',
+    title: "DESIGN",
     items: [
-      'Branding',
-      'Brand kits & merch',
-      'Website design',
-      'Packaging',
-      'Campaign Design',
+      "Branding",
+      "Brand kits & merch",
+      "Website design",
+      "Packaging",
+      "Campaign Design",
     ],
   },
   {
-    title: 'MARKETING',
-    items: [
-      'Social Media',
-      'Post, Stories, Reels',
-      'Thumbnails and Covers',
-    ],
+    title: "MARKETING",
+    items: ["Social Media", "Post, Stories, Reels", "Thumbnails and Covers"],
   },
   {
-    title: 'CONSULTING',
-    items: [
-      'Brand Auditing',
-      'Website Auditing',
-    ],
+    title: "CONSULTING",
+    items: ["Brand Auditing", "Website Auditing"],
   },
 ];
+
+const fadeUp = (delay = 0) => ({
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { delay, duration: 0.5, ease: "easeOut" },
+  },
+});
 
 export default function OurMojoSection() {
   return (
     <section className="w-full text-center text-white space-y-4 my-2">
       {/* MAIN HEADER */}
       <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
+        initial="hidden"
+        whileInView="visible"
+        variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
+        viewport={{ once: true, amount: 0.3 }}
         className="bg-[#007AFF] py-6 rounded-xl"
       >
-        <h2 className="text-6xl md:text-4xl font-extrabold text-[#FFE600]">
+        <motion.h2
+          variants={fadeUp(0)}
+          className="text-6xl md:text-4xl font-extrabold text-[#FFE600]"
+        >
           OUR MOJO
-        </h2>
+        </motion.h2>
       </motion.div>
 
       {/* SUBHEADING */}
       <motion.p
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ delay: 0.3, duration: 0.6 }}
+        initial="hidden"
+        whileInView="visible"
+        variants={fadeUp(0.2)}
         viewport={{ once: true }}
-        className="bg-[#007AFF] uppercase text-sm tracking-wide text-white/80 rounded-xl"
+        className="bg-[#007AFF] uppercase text-sm tracking-wide text-white/80 rounded-xl p-2"
       >
         AKA OUR SERVICES
       </motion.p>
@@ -61,11 +66,13 @@ export default function OurMojoSection() {
         {services.map((service, index) => (
           <motion.div
             key={service.title}
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.2 }}
+            initial="hidden"
+            whileInView="visible"
+            variants={fadeUp(0.3 + index * 0.1)}
             viewport={{ once: true }}
             className="bg-[#007AFF] p-6 rounded-xl flex flex-col justify-between"
+            whileHover={{ scale: 1.03 }}
+            transition={{ type: "spring", stiffness: 200, damping: 18 }}
           >
             <ul className="text-[#FFE600] text-left text-sm list-disc pl-4">
               {service.items.map((item, i) => (
@@ -87,7 +94,12 @@ export default function OurMojoSection() {
         viewport={{ once: true }}
         className="bg-[#FF00C7] text-[#FFE600] text-6xl font-extrabold py-2  px-6 rounded-xl"
       >
-        AAGE AAGE DEKHO HOTA HAI KYA
+        <motion.span
+          animate={{ opacity: [1, 0.85, 1] }}
+          transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+        >
+          AAGE AAGE DEKHO HOTA HAI KYA
+        </motion.span>
       </motion.div>
     </section>
   );
