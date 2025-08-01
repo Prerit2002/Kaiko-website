@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import SplineSection from './components/SplineSection';
 import CreativeApproachSection from './components/CreativeApproachSection';
@@ -15,7 +15,7 @@ import Dukkaan from './components/Dukkaan';
 import Clodor from './components/Clodor';
 import Clenzi from './components/Clenzi';
 import Bartender from './components/Bartender';
-
+import Jobs from './components/Jobs';
 import './App.css';
 
 function HomePage() {
@@ -32,6 +32,7 @@ function HomePage() {
         <BombayBanner />
         <CollaborativeDesignProcess />
         <WeirdSnake />
+        <Jobs />
         <ServicesSection />
       </section>
     </div>

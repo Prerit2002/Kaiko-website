@@ -74,7 +74,7 @@ export default function HeroSection() {
       <img
         src={MainMobile}
         alt="Visual Mobile"
-        className="block md:hidden absolute top-0 left-0 w-full h-full object-cover "
+        className="block md:hidden absolute top-0 left-0 w-full h-full bg-cover bg-no-repeat bg-center  "
         />
       <img
         src={HeroImage}

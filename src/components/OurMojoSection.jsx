@@ -51,7 +51,7 @@ export default function OurMojoSection() {
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.3, duration: 0.6 }}
         viewport={{ once: true }}
-        className="bg-[#007AFF] uppercase text-sm tracking-wide text-white/80"
+        className="bg-[#007AFF] uppercase text-sm tracking-wide text-white/80 rounded-xl"
       >
         AKA OUR SERVICES
       </motion.p>

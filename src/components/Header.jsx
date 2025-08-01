@@ -9,7 +9,7 @@ const navLinks = [
   { name: 'Work', href: '#work' },
   { name: 'Contact', href: '#contact' },
   { name: 'About', href: '#about' },
-  { name: 'Careers', href: '#' },
+  { name: 'Careers', href: '#jobs' },
 ];
 
 export default function Header() {
