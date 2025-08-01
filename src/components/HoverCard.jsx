@@ -103,7 +103,10 @@ const HoverCard = ({
         transition={{ type: "spring", stiffness: 240, damping: 18 }}
       >
         {/* Title */}
-        <div
+        {!hovered && (
+
+          <>
+            <div
           className={`text-2xl font-bold ${
             comingSoon ? "text-black" : "text-white"
           }`}
@@ -119,6 +122,9 @@ const HoverCard = ({
         >
           {comingSoon ? "TO BE RELEASED" : subtitle}
         </div>
+          </>
+         ) }
+        
       </motion.div>
     </div>
   );
