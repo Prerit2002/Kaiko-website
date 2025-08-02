@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const HeroSection = () => {
   const [activeTab, setActiveTab] = useState("TEAM PLAY");
@@ -110,18 +111,21 @@ const HeroSection = () => {
       {/* Pattern Container */}
       <div className="relative h-[12rem] w-[90vw] sm:w-[35rem] md:w-[60rem] lg:w-[60rem] overflow-hidden mx-auto">
         {vPattern.map((item, index) => (
-          <span
+          <motion.span
             key={index}
-            className="absolute text-base sm:text-lg md:text-4xl transition-all"
+            className="absolute text-base sm:text-lg md:text-4xl"
             style={{
               left: item.left,
               top: item.top,
               transform: "translateX(-50%)",
               whiteSpace: "nowrap",
             }}
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: index * 0.05, duration: 0.3 }}
           >
             {item.letter}
-          </span>
+          </motion.span>
         ))}
       </div>
     </div>
@@ -130,14 +134,57 @@ const HeroSection = () => {
   // Vatavaran Content Component
   const VatavaranContent = () => (
   <div className="relative h-[12rem] flex flex-col items-center justify-center px-6 md:px-12">
-    <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-center">
+    <motion.h1 
+      className="text-2xl md:text-4xl lg:text-5xl font-bold text-center"
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+    >
       vibe check is a must
-    </h1>
-    <p className="text-lg md:text-xl lg:text-2xl text-center mt-2">
+    </motion.h1>
+    <motion.p 
+      className="text-lg md:text-xl lg:text-2xl text-center mt-2"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, delay: 0.2 }}
+    >
       and it goes both ways
-    </p>
+    </motion.p>
   </div>
 );
+
+  // Animation variants for carousel
+  const slideVariants = {
+    enter: (direction) => ({
+      x: direction > 0 ? 1000 : -1000,
+      opacity: 0,
+    }),
+    center: {
+      zIndex: 1,
+      x: 0,
+      opacity: 1,
+    },
+    exit: (direction) => ({
+      zIndex: 0,
+      x: direction < 0 ? 1000 : -1000,
+      opacity: 0,
+    }),
+  };
+
+  const swipeConfidenceThreshold = 10000;
+  const swipePower = (offset, velocity) => {
+    return Math.abs(offset) * velocity;
+  };
+
+  const tabs = ["TEAM PLAY", "GROWTH", "VATAVARAN"];
+  const currentIndex = tabs.indexOf(activeTab);
+
+  const paginate = (newDirection) => {
+    const newIndex = currentIndex + newDirection;
+    if (newIndex >= 0 && newIndex < tabs.length) {
+      setActiveTab(tabs[newIndex]);
+    }
+  };
 
   return (
     <div className="w-full text-yellow-400 font-sans">
@@ -149,7 +196,7 @@ const HeroSection = () => {
       {/* Tabs */}
       <div className="flex justify-center gap-3 my-3 flex-wrap">
         {["TEAM PLAY", "GROWTH", "VATAVARAN"].map((tab) => (
-          <button
+          <motion.button
             key={tab}
             onClick={() => setActiveTab(tab)}
             className={`rounded-full px-4 py-1 text-sm font-semibold transition-all duration-300 ${
@@ -157,60 +204,112 @@ const HeroSection = () => {
                 ? "bg-pink-600 text-white"
                 : "border border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black"
             }`}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
           >
             {tab}
-          </button>
+          </motion.button>
         ))}
       </div>
 
       {/* Content Area with Carousel */}
       <div className="relative bg-pink-600 rounded-xl py-8 md:py-10 mx-auto text-yellow-400 font-bold overflow-hidden">
-        <div className="relative">
-          {/* Team Play Content */}
-          <div
-            className={`transition-all duration-700 ease-in-out ${
-              activeTab === "TEAM PLAY"
-                ? "opacity-100 transform translate-x-0"
-                : "opacity-0 transform translate-x-full absolute inset-0"
-            }`}
-          >
-            <TeamPlayContent />
-          </div>
+        <div className="relative h-[12rem]">
+          <AnimatePresence mode="wait" custom={1}>
+            {/* Team Play Content */}
+            {activeTab === "TEAM PLAY" && (
+              <motion.div
+                key="team-play"
+                custom={1}
+                variants={slideVariants}
+                initial="enter"
+                animate="center"
+                exit="exit"
+                transition={{
+                  x: { type: "spring", stiffness: 300, damping: 30 },
+                  opacity: { duration: 0.2 }
+                }}
+                drag="x"
+                dragConstraints={{ left: 0, right: 0 }}
+                dragElastic={1}
+                onDragEnd={(e, { offset, velocity }) => {
+                  const swipe = swipePower(offset.x, velocity.x);
 
-          {/* Growth Content */}
-          <div
-            className={`transition-all duration-700 ease-in-out ${
-              activeTab === "GROWTH"
-                ? "opacity-100 transform translate-x-0"
-                : "opacity-0 transform translate-x-full absolute inset-0"
-            }`}
-          >
-            <GrowthContent />
-          </div>
+                  if (swipe < -swipeConfidenceThreshold) {
+                    paginate(1);
+                  } else if (swipe > swipeConfidenceThreshold) {
+                    paginate(-1);
+                  }
+                }}
+                className="absolute inset-0"
+              >
+                <TeamPlayContent />
+              </motion.div>
+            )}
 
-          {/* Vatavaran Content */}
-          <div
-            className={`transition-all duration-700 ease-in-out ${
-              activeTab === "VATAVARAN"
-                ? "opacity-100 transform translate-x-0"
-                : "opacity-0 transform translate-x-full absolute inset-0"
-            }`}
-          >
-            <VatavaranContent />
-          </div>
+            {/* Growth Content */}
+            {activeTab === "GROWTH" && (
+              <motion.div
+                key="growth"
+                custom={1}
+                variants={slideVariants}
+                initial="enter"
+                animate="center"
+                exit="exit"
+                transition={{
+                  x: { type: "spring", stiffness: 300, damping: 30 },
+                  opacity: { duration: 0.2 }
+                }}
+                drag="x"
+                dragConstraints={{ left: 0, right: 0 }}
+                dragElastic={1}
+                onDragEnd={(e, { offset, velocity }) => {
+                  const swipe = swipePower(offset.x, velocity.x);
+
+                  if (swipe < -swipeConfidenceThreshold) {
+                    paginate(1);
+                  } else if (swipe > swipeConfidenceThreshold) {
+                    paginate(-1);
+                  }
+                }}
+                className="absolute inset-0"
+              >
+                <GrowthContent />
+              </motion.div>
+            )}
+
+            {/* Vatavaran Content */}
+            {activeTab === "VATAVARAN" && (
+              <motion.div
+                key="vatavaran"
+                custom={1}
+                variants={slideVariants}
+                initial="enter"
+                animate="center"
+                exit="exit"
+                transition={{
+                  x: { type: "spring", stiffness: 300, damping: 30 },
+                  opacity: { duration: 0.2 }
+                }}
+                drag="x"
+                dragConstraints={{ left: 0, right: 0 }}
+                dragElastic={1}
+                onDragEnd={(e, { offset, velocity }) => {
+                  const swipe = swipePower(offset.x, velocity.x);
+
+                  if (swipe < -swipeConfidenceThreshold) {
+                    paginate(1);
+                  } else if (swipe > swipeConfidenceThreshold) {
+                    paginate(-1);
+                  }
+                }}
+                className="absolute inset-0"
+              >
+                <VatavaranContent />
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
-
-        {/* Progress Indicator */}
-        {/* <div className="flex justify-center space-x-2 mt-6">
-          {["TEAM PLAY", "GROWTH", "VATAVARAN"].map((tab, index) => (
-            <div
-              key={tab}
-              className={`h-1 w-8 md:w-12 rounded-full transition-all duration-300 ${
-                activeTab === tab ? "bg-yellow-400" : "bg-yellow-400/30"
-              }`}
-            />
-          ))}
-        </div> */}
       </div>
     </div>
   );
