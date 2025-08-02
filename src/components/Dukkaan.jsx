@@ -81,7 +81,7 @@ export default function Dukkaan() {
         <motion.img
           src={Circular}
           alt="Dukkaan Project"
-          className="max-w-full max-h-[70vh] w-auto h-auto rounded-lg object-contain mx-auto"
+          className="max-w-full max-h-[70vh] w-auto h-auto rounded-lg object-contain mx-auto p-5"
           initial={{ scale: 0.9, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.8 }}
