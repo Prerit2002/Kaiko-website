@@ -18,6 +18,7 @@ import Wordmark from "../assets/Dukkaan/Wordmark.png";
 import Rectangle from "../assets/Dukkaan/Rectangle.png";
 import Video1 from "../assets/Dukkaan/videos/basantiforkaiko.mp4";
 import Video2 from "../assets/Dukkaan/videos/housemix.mp4";
+import Video3 from "../assets/Dukkaan/videos/logoreveal.mp4";
 
 const AutoProgressLine = ({ onChange }) => {
   const totalSteps = 5;
@@ -140,7 +141,7 @@ export default function Dukkaan() {
       ))}
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-5 w-full">
-        {[Video1, Video2, Video2].map((src, i) => (
+        {[Video1, Video3, Video2].map((src, i) => (
           <video
             key={i}
             src={src}

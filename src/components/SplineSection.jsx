@@ -2,10 +2,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import HeroImage from "../assets/PinkMark.png"; // desktop
 import MainMobile from "../assets/MainMobile.png"; // mobile
+import Spline from "../assets/Spline.png"
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full h-[500px] overflow-hidden rounded-xl bg-black">
+    <section className="relative w-full h-[700px] overflow-hidden rounded-xl bg-black">
       {/* Mobile Background */}
       <motion.img
         src={MainMobile}
@@ -19,7 +20,7 @@ export default function HeroSection() {
       {/* Desktop Background wrapper to center without cropping */}
       <div className="hidden md:flex absolute inset-0 items-center justify-center px-4 py-2">
         <motion.img
-          src={HeroImage}
+          src={Spline}
           alt="Hero Background"
           className="max-w-full max-h-full object-contain"
           initial={{ scale: 1.02, opacity: 0 }}
@@ -30,7 +31,7 @@ export default function HeroSection() {
       </div>
 
       {/* Curved Text (desktop only) */}
-      <motion.svg
+      {/* <motion.svg
         className="hidden md:block absolute inset-0 w-full h-full pointer-events-none"
         viewBox="0 0 1500 500"
         preserveAspectRatio="xMidYMid meet"
@@ -65,7 +66,7 @@ export default function HeroSection() {
             We're the fun friends your brand didn't know it needed
           </textPath>
         </motion.text>
-      </motion.svg>
+      </motion.svg> */}
 
       {/* Soft gradient overlay so edges feel less abrupt */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/30 to-transparent" />

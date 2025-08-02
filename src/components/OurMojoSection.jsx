@@ -74,12 +74,12 @@ export default function OurMojoSection() {
             whileHover={{ scale: 1.03 }}
             transition={{ type: "spring", stiffness: 200, damping: 18 }}
           >
-            <ul className="text-[#FFE600] text-left  list-disc pl-4 text-xl md:text-3xl">
+            <ul className="text-[#FFE600] text-left  pl-4 text-xl md:text-3xl">
               {service.items.map((item, i) => (
                 <li key={i}>{item}</li>
               ))}
             </ul>
-            <h3 className="text-3xl md:text-5xl font-bold text-white text-center pt-4">
+            <h3 className="text-3xl md:text-5xl font-bold text-white mt-10 md:mt-20 pt-4">
               {service.title}
             </h3>
           </motion.div>
@@ -92,7 +92,7 @@ export default function OurMojoSection() {
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.6 }}
         viewport={{ once: true }}
-        className="bg-[#FF00C7] text-[#FFE600] text-3xl md:text-6xl font-extrabold py-2  px-6 rounded-xl"
+        className="bg-[#EF4293] text-[#FFE600] text-3xl md:text-6xl font-semibold py-2  px-6 rounded-xl"
       >
         <motion.span
           animate={{ opacity: [1, 0.85, 1] }}
