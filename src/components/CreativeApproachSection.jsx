@@ -58,7 +58,7 @@ export default function CreativeApproachSection() {
                 APPROACH
               </div>
             </div>
-            <div className="flex-1 text-2xl md:text-3xl lg:text-6xl font-medium leading-tight relative">
+            <div className="flex-1 text-2xl md:text-7xl font-medium leading-tight relative">
               LEVERAGING EVERY BIT OF
               <br />
               DATA
@@ -83,7 +83,7 @@ export default function CreativeApproachSection() {
                 GOAL
               </div>
             </div>
-            <div className="text-2xl md:text-3xl lg:text-6xl font-medium leading-tight">
+            <div className="text-2xl text-2xl md:text-7xl font-medium leading-tight">
               EXECUTE UNCONVENTION–
               <br />
               AL SOLUTIONS
