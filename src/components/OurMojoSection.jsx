@@ -44,7 +44,7 @@ export default function OurMojoSection() {
       >
         <motion.h2
           variants={fadeUp(0)}
-          className="text-6xl md:text-4xl font-extrabold text-[#FFE600]"
+          className="text-4xl md:text-6xl font-extrabold text-[#FFE600]"
         >
           OUR MOJO
         </motion.h2>
@@ -79,7 +79,7 @@ export default function OurMojoSection() {
                 <li key={i}>{item}</li>
               ))}
             </ul>
-            <h3 className="text-3xl md:text-5xl font-bold text-white mt-10 md:mt-20 pt-4">
+            <h3 className="text-left text-3xl md:text-5xl font-bold text-white mt-10 md:mt-20 pt-4">
               {service.title}
             </h3>
           </motion.div>
