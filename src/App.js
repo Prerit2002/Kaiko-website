@@ -54,7 +54,7 @@ function App() {
         <Route path="/career" element={<Careers />} />
         <Route path="/about" element={<About />} />
         <Route path="/duggu" element={<Duggu />} />
-        <Route path="/dukkaan" element={<Dukkaan />} />
+        <Route path="/dukaan" element={<Dukkaan />} />
         <Route path="/clodor" element={<Clodor />} />
         <Route path="/clenzi" element={<Clenzi />} />
         <Route path="/bartender" element={<Bartender />} />

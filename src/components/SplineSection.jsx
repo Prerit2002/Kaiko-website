@@ -51,7 +51,7 @@ export default function HeroSection() {
           fill="#ffe600"
           fontFamily="Space Grotesk, sans-serif"
           fontWeight="500"
-          fontSize="clamp(22px, 2vw, 30px)"
+          fontSize="clamp(30px, 2vw, 30px)"
           // subtle horizontal float to keep it lively
           animate={{ x: [0, 3, 0], rotate: [0, 1, 0] }}
           transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}

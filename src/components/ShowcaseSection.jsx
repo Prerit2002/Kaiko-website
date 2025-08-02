@@ -39,16 +39,16 @@ export default function ShowcaseSection() {
         redirectUrl="/duggu"
       />
       <HoverCard
-        title="DUKKAAN"
+        title="DUKAAN"
         subtitle="PRODUCT DESIGN & BRANDING"
-        bgColor="#661EFF"
+        bgColor="#F9D8C9"
         cardImages={[
           Dukkaan1,
           Dukkaan2,
           Dukkaan3,
           Dukkaan4,
         ]}
-        redirectUrl="/dukkaan"
+        redirectUrl="/dukaan"
       />
       <HoverCard
         title="CLENZI"
@@ -65,7 +65,7 @@ export default function ShowcaseSection() {
       <HoverCard
         title="THE BARTENDER"
         subtitle="PRINT"
-        bgColor="#D6D3D1"
+        bgColor="#B7AA9F"
         cardImages={[
           Bartender1,
           Bartender2,

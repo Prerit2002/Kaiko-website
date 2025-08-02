@@ -173,7 +173,7 @@ export default function Clenzi() {
         <img
           src={Clenzi1}
           alt="Clenzi Mobile Mockup"
-          className="w-full h-auto rounded-lg shadow-lg"
+          className="w-full h-auto rounded-[3.5rem] shadow-lg"
         />
       </motion.div>
 
@@ -204,7 +204,7 @@ export default function Clenzi() {
               An <span className="inline text-[#611AA1]">AI storytelling companion</span> for children
             </>
           }
-          redirectUrl="/dugdu"
+          redirectUrl="/duggu"
         />
       </motion.div>
 
