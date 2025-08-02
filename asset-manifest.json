@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/Kaiko-website/static/css/main.751b3c31.css",
-    "main.js": "/Kaiko-website/static/js/main.51cfe72a.js",
+    "main.css": "/Kaiko-website/static/css/main.581a1309.css",
+    "main.js": "/Kaiko-website/static/js/main.c8a6990c.js",
     "static/js/453.aaadedc8.chunk.js": "/Kaiko-website/static/js/453.aaadedc8.chunk.js",
     "static/media/clodor.mp4": "/Kaiko-website/static/media/clodor.60cbe2eceef8f9d32ec9.mp4",
     "static/media/basantiforkaiko.mp4": "/Kaiko-website/static/media/basantiforkaiko.43a44ed40ecb9b2018a9.mp4",
     "static/media/housemix.mp4": "/Kaiko-website/static/media/housemix.b3c1b26b181e3eb40562.mp4",
+    "static/media/logoreveal.mp4": "/Kaiko-website/static/media/logoreveal.5d7198b1b101794343bd.mp4",
     "static/media/Introvideo.mp4": "/Kaiko-website/static/media/Introvideo.f6eaab42d337d574a4e8.mp4",
     "static/media/clenzianimals.mp4": "/Kaiko-website/static/media/clenzianimals.bbf5c59fe5719c071027.mp4",
     "static/media/POPCORNMOCKUPS1.png": "/Kaiko-website/static/media/POPCORNMOCKUPS1.d2fd62b921735499124d.png",
@@ -34,6 +35,7 @@
     "static/media/Onboardingprototype.mp4": "/Kaiko-website/static/media/Onboardingprototype.41452e2fede37fa0488a.mp4",
     "static/media/Bluetoothprototype.mp4": "/Kaiko-website/static/media/Bluetoothprototype.72c834011653a7c58c0d.mp4",
     "static/media/duggufinal1.png": "/Kaiko-website/static/media/duggufinal1.555d372ad7a48d389033.png",
+    "static/media/Spline.png": "/Kaiko-website/static/media/Spline.e4a381b325fd5a9a1b7f.png",
     "static/media/4.png": "/Kaiko-website/static/media/4.c6beddebe6fdd106a3cf.png",
     "static/media/Frame2059.png": "/Kaiko-website/static/media/Frame2059.c6f8d5b373d4443d9aa5.png",
     "static/media/Frame1.png": "/Kaiko-website/static/media/Frame1.726a12a293293d842217.png",
@@ -56,12 +58,12 @@
     "static/media/text2.png": "/Kaiko-website/static/media/text2.61abad3d06b9dc5c994b.png",
     "static/media/clenzielements.png": "/Kaiko-website/static/media/clenzielements.cead4f6ae8165b6dcbf2.png",
     "index.html": "/Kaiko-website/index.html",
-    "main.751b3c31.css.map": "/Kaiko-website/static/css/main.751b3c31.css.map",
-    "main.51cfe72a.js.map": "/Kaiko-website/static/js/main.51cfe72a.js.map",
+    "main.581a1309.css.map": "/Kaiko-website/static/css/main.581a1309.css.map",
+    "main.c8a6990c.js.map": "/Kaiko-website/static/js/main.c8a6990c.js.map",
     "453.aaadedc8.chunk.js.map": "/Kaiko-website/static/js/453.aaadedc8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.751b3c31.css",
-    "static/js/main.51cfe72a.js"
+    "static/css/main.581a1309.css",
+    "static/js/main.c8a6990c.js"
   ]
 }
