@@ -37,7 +37,7 @@ const ServicesSection = () => {
             <div className="flex flex-wrap gap-2 sm:gap-3 lg:gap-4 w-full sm:w-auto">
               <a
                 href="https://instagram.com/thekaikostudios"
-                className="bg-black/90 backdrop-blur-md text-yellow-400 border border-blue-400/80 rounded-full px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-semibold hover:bg-yellow-400 hover:text-black transition-all duration-300 whitespace-nowrap shadow-lg hover:shadow-xl transform hover:scale-105"
+                className="bg-black/90 backdrop-blur-md text-yellow-400 border border-blue-400/80 rounded-full px-3 py-1.5 sm:px-4 sm:py-2 md:text-xl text-sm font-semibold hover:bg-yellow-400 hover:text-black transition-all duration-300 whitespace-nowrap shadow-lg hover:shadow-xl transform hover:scale-105"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -45,13 +45,13 @@ const ServicesSection = () => {
               </a>
               <a
                 href="tel:+919039756905"
-                className="bg-black/90 backdrop-blur-md text-yellow-400 border border-blue-400/80 rounded-full px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-semibold hover:bg-yellow-400 hover:text-black transition-all duration-300 whitespace-nowrap shadow-lg hover:shadow-xl transform hover:scale-105"
+                className="bg-black/90 backdrop-blur-md text-yellow-400 border border-blue-400/80 rounded-full px-3 py-1.5 sm:px-4 sm:py-2 md:text-xl text-sm font-semibold hover:bg-yellow-400 hover:text-black transition-all duration-300 whitespace-nowrap shadow-lg hover:shadow-xl transform hover:scale-105"
               >
                 +91 9039756905
               </a>
               <a
                 href="mailto:contact@thekaikostudios.com"
-                className="bg-black/90 backdrop-blur-md text-yellow-400 border border-blue-400/80 rounded-full px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-semibold hover:bg-yellow-400 hover:text-black transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                className="bg-black/90 backdrop-blur-md text-yellow-400 border border-blue-400/80 rounded-full px-3 py-1.5 sm:px-4 sm:py-2 md:text-xl text-sm font-semibold hover:bg-yellow-400 hover:text-black transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
               >
                 <span className="hidden sm:inline">contact@thekaikostudios.com</span>
                 <span className="sm:hidden">Email Us</span>
@@ -71,7 +71,7 @@ const ServicesSection = () => {
           </div>
 
           {/* Footer row */}
-          <div className="flex flex-row md:flex-col  justify-between items-start sm:items-end w-full gap-2 sm:gap-4">
+          <div className="flex flex-row   justify-between items-start sm:items-end w-full gap-2 sm:gap-4">
             <span className="font-bold text-base sm:text-xs md:text-xl lg:text-2xl text-white drop-shadow-[2px_2px_4px_rgba(0,0,0,0.8)] bg-black/30 backdrop-blur-sm px-3 py-1 rounded-lg">
               @kaiko STUDIOS
             </span>

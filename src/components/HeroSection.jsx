@@ -72,11 +72,11 @@ const GrowthSection = () => {
       <div className="relative bg-pink-600 rounded-xl py-10 mx-auto text-yellow-400 font-bold overflow-visible">
         <div className="relative w-full flex justify-center ">
             {/* Pattern Container */}
-            <div className="relative h-[11rem] w-[90vw] sm:w-[35rem] md:w-[60rem] lg:w-[60rem] overflow-hidden mx-auto">
+            <div className="relative h-[10rem] w-[90vw] sm:w-[35rem] md:w-[60rem] lg:w-[60rem] overflow-hidden mx-auto">
             {vPattern.map((item, index) => (
                 <span
                 key={index}
-                className="absolute text-base sm:text-lg md:text-2xl lg:text-4xl transition-all"
+                className="absolute text-base sm:text-lg md:text-4xl  transition-all"
                 style={{
                     left: item.left, // e.g. '50%', '40%' — set in `vPattern`
                     top: item.top,   // e.g. '2rem', '5rem' — set in `vPattern`
