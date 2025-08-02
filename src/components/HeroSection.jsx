@@ -60,7 +60,7 @@ const HeroSection = () => {
         const nextIndex = (currentIndex + 1) % tabs.length;
         return tabs[nextIndex];
       });
-    }, 5000); // Change every 5 seconds
+    }, 2200); // Change every 5 seconds
 
     return () => clearInterval(interval);
   }, []);
