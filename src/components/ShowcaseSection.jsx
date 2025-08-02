@@ -23,7 +23,7 @@ import Clodor4 from "../assets/HoverImages/Clodor/4.png";
 export default function ShowcaseSection() {
   return (
     <section id="work" className="w-full">
-      <div className="bg-yellow-400  rounded-full py-3 text-center mx-auto text-black font-bold text-lg">
+      <div className="bg-yellow-400  rounded-full py-3 text-center mx-auto text-black font-bold text-md md:text-xl font-clash">
         BEHOLD
       </div>
       <HoverCard

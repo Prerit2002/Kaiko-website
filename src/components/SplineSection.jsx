@@ -10,14 +10,14 @@ export default function HeroSection() {
       <motion.img
         src={MainMobile}
         alt="Visual Mobile"
-        className="block md:hidden absolute inset-0 w-full h-full object-cover"
+        className="block md:hidden absolute inset-0 w-full h-full object-fill"
         initial={{ opacity: 0.85, scale: 1.01 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       />
 
       {/* Desktop Background wrapper to center without cropping */}
-      <div className="hidden md:flex absolute inset-0 items-center justify-center px-4">
+      <div className="hidden md:flex absolute inset-0 items-center justify-center px-4 py-2">
         <motion.img
           src={HeroImage}
           alt="Hero Background"
@@ -58,7 +58,7 @@ export default function HeroSection() {
         >
           <textPath
             href="#curve"
-            startOffset="16%"
+            startOffset="15.5%"
             method="stretch"
             spacing="auto"
           >

@@ -21,11 +21,11 @@ import './App.css';
 
 function HomePage() {
   return (
-    <div style={{ backgroundColor: '#151515' }} className="min-h-screen text-white p-5">
+    <div style={{ backgroundColor: '#151515' }} className="min-h-screen text-white p-5 font-sans">
       <section className='w-full mx-auto flex flex-col items-center gap-3'>
         <Header />
         <SplineSection />
-        <div className="bg-black text-[#EF4293] bg-black p-5 rounded-lg w-full text-center text-xl">
+        <div className="bg-black text-[#EF4293] bg-black p-5 rounded-lg w-full text-center text-2xl font-clans">
           <h1>Namaste</h1>
         </div>
         <CreativeApproachSection />

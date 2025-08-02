@@ -12,10 +12,15 @@ export default function Bartender() {
     return (
         <div style={{ backgroundColor: "#151515" }} className="min-h-screen text-white p-5 gap-3">
             <Header />
-            <div className="flex justify-between items-center bg-black my-3 p-8 rounded-lg shadow-lg">
-                <h2 className="text-4xl font-bold text-white">THE BARTENDER</h2>
-                <p className="text-lg text-white text-right">A Unique <span className="text-[#EE3464]">Bar Menu</span> <br/> and Keepsake</p>
-            </div>
+            <div className="flex flex-col md:flex-row md:justify-between items-center bg-black my-3 p-4 md:p-8 rounded-lg shadow-lg">
+  <h2 className="text-4xl font-bold text-white mb-2 md:mb-0">THE BARTENDER</h2>
+  <p className="text-base md:text-3xl text-white text-center md:text-right font-semibold">
+    A Unique <span className="text-[#EE3464]">Bar Menu</span>
+    <span className="hidden md:inline"><br /></span>
+    <span className="md:hidden"> </span>
+    and Keepsake
+  </p>
+</div>
             <img src={Frame2055} alt="Clodor Mobile Mockup" className="w-full h-auto mt-5 rounded-lg shadow-lg" />
             <div className="flex justify-center items-center bg-black mt-2 p-8 rounded-lg shadow-lg text-xl font-bold">
                 <span> <span className="text-[#B7AA9F]">A side of cliché</span> for all your drinks</span>
@@ -48,6 +53,7 @@ export default function Bartender() {
                         Packaging for <span className="inline text-[#611AA1]">sustainable</span> disposables
                     </>
                 }
+                redirectUrl="/clenzi"
             />
             <ServicesSection />
 

@@ -5,7 +5,7 @@ export default function Jobs() {
             <h2 className="text-pink-600 text-4xl md:text-5xl font-extrabold tracking-tight bg-black py-12 w-full rounded-3xl text-center">
                 SWAGAT HAIN AAPKA
             </h2>
-            <div className="bg-yellow-400 text-black text-md uppercase tracking-wider font-semibold px-4 py-2 rounded-full text-center w-full">
+            <div className="bg-yellow-400 text-black text-md uppercase tracking-wider font-semibold px-4 py-2 rounded-full text-center w-full font-clans">
                 looking for a job?
             </div>
 

@@ -26,11 +26,14 @@ export default function Duggu() {
       className="min-h-screen text-white p-5 gap-3"
     >
       <Header />
-      <div className="flex justify-between items-center bg-black my-3 p-8 rounded-lg shadow-lg">
-        <h2 className="text-4xl font-bold text-white">Duggu</h2>
-        <p className="text-lg text-white text-right font-semibold">
+      <div className="flex flex-col md:flex-row md:justify-between items-center bg-black my-3 p-4 md:p-8 rounded-lg shadow-lg">
+        <h2 className="text-4xl font-bold text-white mb-2 md:mb-0">Duggu</h2>
+        <p className="text-base md:text-3xl text-white text-center md:text-right font-semibold">
           An <span className="text-[#611AA1]">AI Story Telling device</span>
-          <br />
+          <span className="hidden md:inline">
+            <br />
+          </span>
+          <span className="md:hidden"> </span>
           for children
         </p>
       </div>
@@ -43,17 +46,17 @@ export default function Duggu() {
         <span>An AI Storytelling Companion</span>
       </div>
 
-      <div className="grid grid-cols-4 gap-4 mt-5">
-        <div className="flex justify-center items-center bg-black  p-8 rounded-lg shadow-lg text-lg font-semibold">
+      <div className="grid grid-cols-4 gap-2 md:gap-4 mt-5">
+        <div className="flex justify-center items-center bg-black  p-8 rounded-lg shadow-lg text-base md:text-lg font-semibold">
           Friend
         </div>
-        <div className="flex justify-center items-center bg-black  p-8 rounded-lg shadow-lg text-lg font-semibold">
+        <div className="flex justify-center items-center bg-black  p-8 rounded-lg shadow-lg text-base md:text-lg font-semibold">
           Storyteller
         </div>
-        <div className="flex justify-center items-center bg-black  p-8 rounded-lg shadow-lg text-lg font-semibold">
+        <div className="flex justify-center items-center bg-black  p-8 rounded-lg shadow-lg text-base md:text-lg font-semibold">
           Creator
         </div>
-        <div className="flex justify-center items-center bg-black  p-8 rounded-lg shadow-lg text-lg font-semibold">
+        <div className="flex justify-center items-center bg-black  p-8 rounded-lg shadow-lg text-base md:text-lg font-semibold">
           Explorer
         </div>
       </div>
@@ -232,6 +235,7 @@ export default function Duggu() {
             keepsake
           </>
         }
+        redirectUrl="/bartender"
       />
 
       <ServicesSection />

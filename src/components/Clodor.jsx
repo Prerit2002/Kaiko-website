@@ -14,10 +14,15 @@ export default function Clodor() {
     return (
         <div style={{ backgroundColor: "#151515" }} className="min-h-screen text-white p-5 gap-3">
             <Header />
-            <div className="flex justify-between items-center  bg-black my-3 p-8 rounded-lg shadow-lg">
-                <h2 className="text-4xl font-bold text-white">Clodor</h2>
-                <p className="text-lg text-white text-right">An <span className="text-[#F9D8C9]">E-Commerce Website</span> <br/> For Ethnic Wear</p>
-            </div>
+            <div className="flex flex-col md:flex-row md:justify-between items-center bg-black my-3 p-4 md:p-8 rounded-lg shadow-lg">
+  <h2 className="text-4xl font-bold text-white mb-2 md:mb-0">Clodor</h2>
+  <p className="text-base md:text-3xl text-white text-center md:text-right font-semibold">
+    An <span className="text-[#F9D8C9]">E-Commerce Website</span>
+    <span className="hidden md:inline"><br /></span>
+    <span className="md:hidden"> </span>
+    For Ethnic Wear
+  </p>
+</div>
             <div className="flex justify-center items-center bg-black mt-2 p-8 rounded-lg shadow-lg text-xl font-bold">
                 <span>A one-stop men's wedding fashion store</span>
             </div>
@@ -52,6 +57,7 @@ export default function Clodor() {
                     A <span className="inline text-[#B7AA9F]">Healthy</span> Snack Shop
                 </>
                 }
+                redirectUrl="/dukaan"
             />
             <ServicesSection />
         </div>

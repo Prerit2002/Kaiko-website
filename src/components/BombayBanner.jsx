@@ -12,7 +12,7 @@ export default function BombayBanner() {
     />
   </div>
 
-  <div className="bg-blue-600 text-white text-md uppercase tracking-wider font-semibold px-4 py-2 rounded-full text-center  w-full">
+  <div className="bg-blue-600 text-white text-md uppercase tracking-wider font-semibold px-4 py-2 rounded-full text-center  w-full font-clans">
     Based in Bombay
   </div>
 </section>

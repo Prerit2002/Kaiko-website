@@ -29,6 +29,9 @@ const AutoProgressLine = ({ onChange }) => {
       const timer = setTimeout(() => setCurrentStep((prev) => prev + 1), 1000);
       return () => clearTimeout(timer);
     }
+    if(currentStep === totalSteps - 1) {
+      setCurrentStep(0); // Reset to 0 after reaching the last step
+    }
   }, [currentStep, onChange]);
 
   const stepPositions = Array.from({ length: totalSteps }, (_, i) => (i / (totalSteps - 1)) * 100);
@@ -56,13 +59,17 @@ export default function Dukkaan() {
     <div style={{ backgroundColor: "#151515" }} className="min-h-screen text-white p-5">
       <Header />
 
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}
-        className="flex justify-between items-center bg-black my-3 p-8 rounded-lg shadow-lg">
-        <h2 className="text-4xl font-bold text-white">Dukkaan</h2>
-        <p className="text-lg text-white text-right">
-          A <span className="text-[#F9D8C9]">Healthy</span> Snack App
-        </p>
-      </motion.div>
+     <motion.div 
+  initial={{ opacity: 0 }} 
+  animate={{ opacity: 1 }} 
+  transition={{ duration: 1 }}
+  className="flex flex-col md:flex-row md:justify-between items-center bg-black my-3 p-4 md:p-8 rounded-lg shadow-lg"
+>
+  <h2 className="text-4xl font-bold text-white mb-2 md:mb-0">Dukkaan</h2>
+  <p className="text-base md:text-3xl text-white text-center md:text-right font-semibold">
+    A <span className="text-[#F9D8C9]">Healthy</span> Snack App
+  </p>
+</motion.div>
 
       <motion.div initial={{ y: 50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.8 }}
         className="flex justify-center items-center bg-black p-8 rounded-lg shadow-lg text-xl font-bold">
@@ -150,7 +157,7 @@ export default function Dukkaan() {
         <span>More to Come</span>
       </div>
 
-      <BottomHeading title="Go to clodor" subtitle={Rectangle} subtitle2="CLODOR" />
+      <BottomHeading title="Go to clodor" subtitle={Rectangle} subtitle2="CLODOR" redirectUrl="/clodor" />
       <ServicesSection />
     </div>
   );

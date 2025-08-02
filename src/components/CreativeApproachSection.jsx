@@ -27,7 +27,7 @@ export default function CreativeApproachSection() {
             variants={rowVariants}
             whileHover="hover"
           >
-            <div className="hidden md:flex items-center justify-center pr-4 w-12">
+            <div className=" md:flex items-center justify-center pr-4 w-12">
               <div className="rotate-[-90deg] origin-center text-black text-sm font-bold tracking-tight whitespace-nowrap">
                 HUM KAUN?
               </div>
@@ -53,7 +53,7 @@ export default function CreativeApproachSection() {
             variants={rowVariants}
             whileHover="hover"
           >
-            <div className="hidden md:flex items-center justify-center pr-4 w-12">
+            <div className="hmd:flex items-center justify-center pr-4 w-12">
               <div className="rotate-[-90deg] origin-center text-black text-sm font-bold tracking-tight whitespace-nowrap">
                 APPROACH
               </div>
@@ -78,7 +78,7 @@ export default function CreativeApproachSection() {
             variants={rowVariants}
             whileHover="hover"
           >
-            <div className="hidden md:flex items-center justify-center pr-4 w-12">
+            <div className="md:flex items-center justify-center pr-4 w-12">
               <div className="rotate-[-90deg] origin-center text-black text-sm font-bold tracking-tight whitespace-nowrap">
                 GOAL
               </div>

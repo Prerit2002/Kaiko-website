@@ -5,7 +5,7 @@ import Header1 from "../assets/Header.png";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 
 const navLinks = [
-  { name: "Services", to: "/services", isPage: true },
+  { name: "Services", href: "#services", isPage: false },
   { name: "Work", href: "#work", isPage: false },
   { name: "Contact", href: "#contact", isPage: false },
   { name: "About", to: "/about", isPage: true },
@@ -36,17 +36,17 @@ export default function Header() {
   };
 
   return (
-    <header className="w-full px-6 py-4 bg-black rounded-2xl text-white relative z-50">
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+    <header className="w-full px-2 py-4 bg-black rounded-2xl text-white relative z-50">
+      <div className="px-4 mx-auto flex items-center justify-between gap-4">
         {/* Logo */}
         <div className="flex flex-col md:flex-row md:items-center md:gap-6 text-left">
           <Link to="/">
-            <img src={Logo} alt="Kaiko Studios Logo" className="h-12 w-auto" />
+            <img src={Logo} alt="Kaiko Studios Logo" className="h-15 w-auto" />
           </Link>
         </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex gap-6 font-semibold text-sm">
+        <nav className="hidden md:flex gap-24 font-semibold text-lg">
           {navLinks.map((link) =>
             link.isPage ? (
               <Link
