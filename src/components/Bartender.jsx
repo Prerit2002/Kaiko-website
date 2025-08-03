@@ -50,7 +50,7 @@ export default function Bartender() {
                 subtitle={clenziLogo}
                 subtitle2={
                     <>
-                        Packaging for <span className="inline text-[#611AA1]">sustainable</span> disposables
+                        Packaging for <span className="inline text-[#EE3464]">sustainable</span> disposables
                     </>
                 }
                 redirectUrl="/clenzi"

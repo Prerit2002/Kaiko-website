@@ -18,6 +18,7 @@ import Introvideo from "../assets/Duggu/videos/Introvideo.mp4";
 import Bluetoothprototype from "../assets/Duggu/videos/Bluetoothprototype.mp4";
 import Exploreprototype from "../assets/Duggu/videos/Exploreprototype.mp4";
 import Onboardingprototype from "../assets/Duggu/videos/Onboardingprototype.mp4";
+import MobileImage from "../assets/Duggu/MobileImage.png";
 
 export default function Duggu() {
   return (
@@ -176,7 +177,7 @@ export default function Duggu() {
         150% increase in genre exploration
       </span>
 
-      <div className="relative w-full h-screen bg-black rounded-lg overflow-hidden p-4">
+      <div className="hidden md:relative w-full h-screen bg-black rounded-lg overflow-hidden p-4">
         {/* Top Right: Image with text BELOW */}
         <div className="absolute top-4 right-4 text-right flex flex-col items-end">
           <div className="h-[50vh] w-auto flex items-center justify-center">
@@ -209,6 +210,8 @@ export default function Duggu() {
           </div>
         </div>
       </div>
+
+      <img src={MobileImage} alt="Duggu Mobile Mockup" className="w-full h-auto mt-5 rounded-lg shadow-lg" />
 
       <img
         src={allfourcolors}

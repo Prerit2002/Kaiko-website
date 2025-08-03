@@ -7,8 +7,8 @@ const CollaborativeDesignProcess = () => {
     <section className=" flex flex-col items-center w-full space-y-3">
       {/* Title */}
       <div className="bg-blue-600 rounded-3xl w-full px-6 py-8 text-center">
-        <h2 className="text-2xl sm:text-3xl md:text-6xl font-bold text-black">
-          A Collaborative Design Process
+        <h2 className="text-3xl md:text-6xl font-bold text-black">
+          A Collaborative <br className="md:hidden" /> Design Process
         </h2>
       </div>
 

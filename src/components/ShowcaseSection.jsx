@@ -19,16 +19,16 @@ import Clodor1 from "../assets/HoverImages/Clodor/1.png";
 import Clodor2 from "../assets/HoverImages/Clodor/2.png";
 import Clodor3 from "../assets/HoverImages/Clodor/3.png";
 import Clodor4 from "../assets/HoverImages/Clodor/4.png";
-import ClodorLogo from "../assets/Dukkaan/Rectangle.png"
+import ClodorLogo from "../assets/ClodorMobile.png"
 import BartenderLogo from "../assets/Duggu/beer.png";
 import DukkaanLogo from "../assets/Clodor/Frame404.svg";
 import DugguLogo from "../assets/Clenzi/Vector.png";
-import ClenziLogo from "../assets/Bartender/clenziLogo.png"
+import ClenziLogo from "../assets/ClenziMobile.png"
 
 export default function ShowcaseSection() {
   return (
     <section id="work" className="w-full">
-      <div className="bg-yellow-400  rounded-full py-3 text-center mx-auto text-black font-bold text-md md:text-xl font-clash">
+      <div className="bg-yellow-400  rounded-full py-3 text-center mx-auto text-black font-normal text-md md:text-xl font-clash">
         BEHOLD
       </div>
       <HoverCard

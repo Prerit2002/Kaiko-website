@@ -9,7 +9,7 @@ import HeaderOpenMobile from "../assets/HeaderOpenMobile.png";
 const navLinks = [
   { name: "SERVICES", href: "#services", isPage: false },
   { name: "WORK", href: "#work", isPage: false },
-  { name: "CONACT", href: "#contact", isPage: false },
+  { name: "CONTACT", href: "#contact", isPage: false },
   { name: "ABOUT", to: "/about", isPage: true },
   { name: "CAREERS", to: "/career", isPage: true },
 ];

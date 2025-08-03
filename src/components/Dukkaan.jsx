@@ -111,7 +111,7 @@ export default function Dukkaan() {
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: i * 0.2 }}
-            className="flex justify-center items-center bg-black p-8 rounded-lg shadow-lg text-lg font-semibold"
+            className="flex justify-center items-center bg-black px-2 py-4 md:p-8 rounded-lg shadow-lg text-base md:text-lg font-semibold nowrap"
           >
             {item}
           </motion.div>

@@ -82,7 +82,7 @@ export default function Clenzi() {
         initial={{ scale: 0.95, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="flex justify-center items-center bg-black mt-6 p-8 rounded-lg shadow-lg text-xl font-bold"
+        className="flex justify-center items-center bg-black mt-6 p-8 rounded-lg shadow-lg text-base md:text-xl font-bold"
       >
         <span>
           Sustainability never looked this <span className="text-[#EE3464]">cute</span>

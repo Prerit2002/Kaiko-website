@@ -10,7 +10,7 @@ export default function Jobs() {
             </div>
 
            <div className="bg-[#0678F4] text-black flex flex-col sm:flex-row items-center sm:items-center justify-between w-full rounded-xl py-10 px-6 gap-4">
-            <h2 className="text-4xl font-extrabold leading-tight">Send Us Your Resume</h2>
+            <h2 className="text-2xl md:text-4xl font-extrabold leading-tight">Send Us Your Resume</h2>
             <p className="text-xl">
                 <a href="mailto:jobs@thekaikostudios.com" className="underline hover:text-white transition">
                 jobs@thekaikostudios.com
