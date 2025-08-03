@@ -79,7 +79,7 @@ export default function OurMojoSection() {
                 <li key={i}>{item}</li>
               ))}
             </ul>
-            <h3 className="text-left text-3xl md:text-5xl font-bold text-white mt-10 md:mt-20 pt-4 pl-4">
+            <h3 className="text-left text-3xl md:text-5xl font-medium text-white mt-10 md:mt-20 pt-4 pl-4">
               {service.title}
             </h3>
           </motion.div>
