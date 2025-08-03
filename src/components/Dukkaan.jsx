@@ -30,12 +30,15 @@ const AutoProgressLine = ({ onChange }) => {
       const timer = setTimeout(() => setCurrentStep((prev) => prev + 1), 1000);
       return () => clearTimeout(timer);
     }
-    if(currentStep === totalSteps - 1) {
+    if (currentStep === totalSteps - 1) {
       setCurrentStep(0); // Reset to 0 after reaching the last step
     }
   }, [currentStep, onChange]);
 
-  const stepPositions = Array.from({ length: totalSteps }, (_, i) => (i / (totalSteps - 1)) * 100);
+  const stepPositions = Array.from(
+    { length: totalSteps },
+    (_, i) => (i / (totalSteps - 1)) * 100
+  );
 
   return (
     <div className="w-full px-8 mt-10 mb-5">
@@ -57,23 +60,30 @@ export default function Dukkaan() {
   const images = [Circular, Fulllogo, Dukaanlogoflat, Wordmark, Frame3];
 
   return (
-    <div style={{ backgroundColor: "#151515" }} className="min-h-screen text-white p-5">
+    <div
+      style={{ backgroundColor: "#151515" }}
+      className="min-h-screen text-white p-5"
+    >
       <Header />
 
-     <motion.div 
-  initial={{ opacity: 0 }} 
-  animate={{ opacity: 1 }} 
-  transition={{ duration: 1 }}
-  className="flex flex-col md:flex-row md:justify-between items-center bg-black my-3 p-4 md:p-8 rounded-lg shadow-lg"
->
-  <h2 className="text-4xl font-bold text-white mb-2 md:mb-0">Dukaan</h2>
-  <p className="text-base md:text-3xl text-white text-center md:text-right font-semibold">
-    A <span className="text-[#F9D8C9]">Healthy</span> Snack App
-  </p>
-</motion.div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="flex flex-col md:flex-row md:justify-between items-center bg-black my-3 p-4 md:p-8 rounded-lg shadow-lg"
+      >
+        <h2 className="text-4xl font-bold text-white mb-2 md:mb-0">Dukaan</h2>
+        <p className="text-base md:text-3xl text-white text-center md:text-right font-semibold">
+          A <span className="text-[#F9D8C9]">Healthy</span> Snack App
+        </p>
+      </motion.div>
 
-      <motion.div initial={{ y: 50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.8 }}
-        className="flex justify-center items-center bg-black p-8 rounded-lg shadow-lg text-xl font-bold">
+      <motion.div
+        initial={{ y: 50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        className="flex justify-center items-center bg-black p-8 rounded-lg shadow-lg text-xl font-bold"
+      >
         <span className="text-[#F9D8C9]">Slow food</span>
         <span className="ml-1">is the way to go</span>
       </motion.div>
@@ -118,13 +128,17 @@ export default function Dukkaan() {
         ))}
       </div>
 
-      <img src={Frame3} alt="Dukkaan Project" className="w-full h-auto mt-5 rounded-lg shadow-lg" />
+      <img
+        src={Frame3}
+        alt="Dukkaan Project"
+        className="w-full h-auto mt-5 rounded-lg shadow-lg"
+      />
 
       <div className="flex justify-center items-center bg-black mt-2 p-8 rounded-lg shadow-lg text-xl font-bold">
         <span>Colours per product category</span>
       </div>
 
-      <div className="flex flex-row items-center mt-3 gap-3">
+      <div className="grid grid-cols-3 items-center mt-3 gap-3">
         {[butterig1, cheeseig1, truffleig1].map((src, i) => (
           <motion.img
             key={i}
@@ -137,7 +151,12 @@ export default function Dukkaan() {
       </div>
 
       {[POPCORNMOCKUPS1, ZOOMIN1].map((src, i) => (
-        <img key={i} src={src} alt="Dukkaan Mockups" className="w-full h-auto mt-5 rounded-lg shadow-lg" />
+        <img
+          key={i}
+          src={src}
+          alt="Dukkaan Mockups"
+          className="w-full h-auto mt-5 rounded-lg shadow-lg"
+        />
       ))}
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-5 w-full">
@@ -158,7 +177,12 @@ export default function Dukkaan() {
         <span>More to Come</span>
       </div>
 
-      <BottomHeading title="Go to clodor" subtitle={Rectangle} subtitle2="CLODOR" redirectUrl="/clodor" />
+      <BottomHeading
+        title="Go to clodor"
+        subtitle={Rectangle}
+        subtitle2="CLODOR"
+        redirectUrl="/clodor"
+      />
       <ServicesSection />
     </div>
   );
