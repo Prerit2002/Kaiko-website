@@ -82,7 +82,7 @@ const HeroSection = () => {
         <h3 className="text-xl md:text-3xl lg:text-4xl font-bold leading-tight">
           OUR SQUAD
         </h3>
-        <div className="flex-1 flex justify-center">
+        <div className="flex-1 flex  justify-end md:justify-center">
           <h3 className="text-xl md:text-3xl lg:text-4xl font-bold leading-tight">
             AND
           </h3>
@@ -90,7 +90,7 @@ const HeroSection = () => {
       </div>
 
       {/* Third line: "WE," aligned right */}
-      <div className="w-full flex justify-end mt-6">
+      <div className="w-full flex justify-end mt-2 md:mt-6">
         <h2 className="text-2xl md:text-4xl lg:text-5xl font-extrabold leading-tight">
           WE,
         </h2>

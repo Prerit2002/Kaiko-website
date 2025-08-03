@@ -3,6 +3,8 @@ import { Menu, X } from "lucide-react";
 import Logo from "../assets/Logo.png";
 import Header1 from "../assets/Header.png";
 import { Link, useNavigate, useLocation } from "react-router-dom";
+import HeaderMobile from "../assets/HeaderMobile.png";
+import HeaderOpenMobile from "../assets/HeaderOpenMobile.png";
 
 const navLinks = [
   { name: "SERVICES", href: "#services", isPage: false },
@@ -74,7 +76,7 @@ export default function Header() {
 
         {/* Mobile Menu Button */}
         <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-white">
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
+          {isOpen ? <img src={HeaderOpenMobile} alt="Menu" className="h-16 w-auto"  /> : <img src={HeaderMobile} alt="Menu" className="h-16 w-auto" />}
         </button>
 
         {/* Tagline */}
