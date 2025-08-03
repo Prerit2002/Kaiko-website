@@ -76,7 +76,7 @@ export default function Header() {
 
         {/* Mobile Menu Button */}
         <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-white">
-          {isOpen ? <img src={HeaderOpenMobile} alt="Menu" className="h-16 w-auto"  /> : <img src={HeaderMobile} alt="Menu" className="h-16 w-auto" />}
+          {isOpen ? <img src={HeaderOpenMobile} alt="Menu" className="h-16 w-auto object-contain"  /> : <img src={HeaderMobile} alt="Menu" className="h-16 w-auto object-contain" />}
         </button>
 
         {/* Tagline */}
