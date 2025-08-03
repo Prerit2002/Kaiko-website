@@ -24,7 +24,7 @@ const ServicesSection = () => {
       </motion.div>
 
       {/* Card with background image and overlay content */}
-      <div className="relative w-full rounded-2xl sm:rounded-3xl overflow-hidden h-[38vh] md:h-[100vh]">
+      <div className="relative w-full rounded-2xl sm:rounded-3xl overflow-hidden  md:h-[100vh]">
         {/* Background Image */}
         <img 
           src={Services} 
@@ -76,7 +76,7 @@ const ServicesSection = () => {
           </div>
 
           {/* Footer row */}
-          <div className="flex flex-row  justify-between items-start sm:items-end w-full gap-2 sm:gap-4">
+          <div className="flex flex-row  justify-between items-end sm:items-end w-full gap-2 sm:gap-4">
             {/* <span className="font-bold text-base sm:text-xs md:text-xl lg:text-2xl text-white drop-shadow-[2px_2px_4px_rgba(0,0,0,0.8)] bg-black/30 backdrop-blur-sm px-3 py-1 rounded-lg"> */}
             <div>
               <img src={BottomLogo} alt="Kaiko Studios Logo" className="h-8 md:h-12 inline-block mr-2" />
