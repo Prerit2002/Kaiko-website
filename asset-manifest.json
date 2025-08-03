@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Kaiko-website/static/css/main.c5d1f497.css",
-    "main.js": "/Kaiko-website/static/js/main.35565626.js",
+    "main.css": "/Kaiko-website/static/css/main.8d12d333.css",
+    "main.js": "/Kaiko-website/static/js/main.ca531c91.js",
     "static/js/453.aaadedc8.chunk.js": "/Kaiko-website/static/js/453.aaadedc8.chunk.js",
     "static/media/clodor.mp4": "/Kaiko-website/static/media/clodor.60cbe2eceef8f9d32ec9.mp4",
     "static/media/basantiforkaiko.mp4": "/Kaiko-website/static/media/basantiforkaiko.43a44ed40ecb9b2018a9.mp4",
@@ -17,6 +17,7 @@
     "static/media/Clodorweb.png": "/Kaiko-website/static/media/Clodorweb.e1a0fce33eb819d280b4.png",
     "static/media/KidsYellow.mp4": "/Kaiko-website/static/media/KidsYellow.2c251eb4d5f2569ec847.mp4",
     "static/media/WomenPink.mp4": "/Kaiko-website/static/media/WomenPink.8c11ef93247bde6f297b.mp4",
+    "static/media/MobileImage.png": "/Kaiko-website/static/media/MobileImage.99d83677050e5a3b67da.png",
     "static/media/Clenzi.jpg": "/Kaiko-website/static/media/Clenzi.0680d51ad471ff52c87b.jpg",
     "static/media/allfourcolors.png": "/Kaiko-website/static/media/allfourcolors.dc43d29739d9f65af94c.png",
     "static/media/1.png": "/Kaiko-website/static/media/1.3eb38577480bea6c2ae6.png",
@@ -58,12 +59,12 @@
     "static/media/text2.png": "/Kaiko-website/static/media/text2.61abad3d06b9dc5c994b.png",
     "static/media/clenzielements.png": "/Kaiko-website/static/media/clenzielements.cead4f6ae8165b6dcbf2.png",
     "index.html": "/Kaiko-website/index.html",
-    "main.c5d1f497.css.map": "/Kaiko-website/static/css/main.c5d1f497.css.map",
-    "main.35565626.js.map": "/Kaiko-website/static/js/main.35565626.js.map",
+    "main.8d12d333.css.map": "/Kaiko-website/static/css/main.8d12d333.css.map",
+    "main.ca531c91.js.map": "/Kaiko-website/static/js/main.ca531c91.js.map",
     "453.aaadedc8.chunk.js.map": "/Kaiko-website/static/js/453.aaadedc8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5d1f497.css",
-    "static/js/main.35565626.js"
+    "static/css/main.8d12d333.css",
+    "static/js/main.ca531c91.js"
   ]
 }
