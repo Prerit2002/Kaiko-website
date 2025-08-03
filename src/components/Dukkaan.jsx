@@ -159,7 +159,7 @@ export default function Dukkaan() {
         />
       ))}
 
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-5 w-full">
+      <div className="grid grid-cols-3 gap-4 mt-5 w-full">
         {[Video1, Video3, Video2].map((src, i) => (
           <video
             key={i}
