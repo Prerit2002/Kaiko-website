@@ -48,7 +48,7 @@ export default function Header() {
         </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex gap-32 font-semibold text-lg">
+        <nav className="hidden md:flex gap-32 font-normal text-lg">
           {navLinks.map((link) =>
             link.isPage ? (
               <Link

@@ -37,7 +37,7 @@ export default function CreativeApproachSection() {
               <span className="font-bold">LAUNCH</span>
               <br />
               THE CREATIVELY DIFFERENT
-              <span className="hidden md:absolute right-0 bottom-0 text-black text-base align-middle">
+              <span className="hidden md:block md:absolute right-0 bottom-0 text-black text-base align-middle">
                 by:
               </span>
             </div>
@@ -62,7 +62,7 @@ export default function CreativeApproachSection() {
               LEVERAGING <br className="md:hidden" /> EVERY BIT OF
               <br />
               <span className="font-bold">DATA</span>
-              <span className="hidden md:absolute right-0 bottom-0 text-black text-base align-middle">
+              <span className="hidden md:block md:absolute right-0 bottom-0 text-black text-base align-middle">
                 to:
               </span>
             </div>

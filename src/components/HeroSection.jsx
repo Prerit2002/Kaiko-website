@@ -268,7 +268,7 @@ const HeroSection = () => {
       </div>
 
       {/* Tabs */}
-      <div className="grid grid-cols-3 gap-3 my-3 flex-wrap">
+      <div className="flex justify-center gap-3 my-3 flex-wrap">
         {["TEAM PLAY", "GROWTH", "VATAVARAN"].map((tab) => (
           <motion.button
             key={tab}
