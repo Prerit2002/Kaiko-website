@@ -37,7 +37,7 @@ const HoverCard = ({
 
   return (
     <div
-      className="relative w-full h-[120px] mx-auto overflow-visible my-5 hover:my-14 transition-all duration-300 ease-in-out cursor-pointer"
+      className="relative w-full h-[120px] mx-auto overflow-visible my-5 md:hover:my-14 transition-all duration-300 ease-in-out cursor-pointer"
       onMouseEnter={() => {
         if (!comingSoon && !isMobile) setHovered(true);
       }}
@@ -83,52 +83,52 @@ const HoverCard = ({
 
       {/* Main Card */}
       <motion.div
-  className="relative w-full h-full rounded-2xl overflow-hidden bg-cover bg-center flex flex-row items-center justify-between px-6 z-30"
-  style={{
-    backgroundImage:
-      effectiveHover && !comingSoon
-        ? `url(${cardImages?.[0]})`
-        : "none",
-    backgroundColor: comingSoon
-      ? "rgba(255, 255, 255, 0.1)"
-      : effectiveHover
-      ? "transparent"
-      : bgColor,
-    filter: comingSoon ? "brightness(85%)" : "none",
-  }}
-  initial={{ scale: 1 }}
-  animate={{
-    scale: effectiveHover && !comingSoon ? 1.03 : 1,
-    y: effectiveHover && !comingSoon ? -3 : 0,
-  }}
-  transition={{ type: "spring", stiffness: 240, damping: 18 }}
->
-  {/* Title */}
-  {!hovered && (
-    <>
-      <div className="flex flex-col md:flex-row md:justify-between w-full md:items-center">
-        <div
-          className={`text-2xl font-bold ${
-            comingSoon ? "text-black" : "text-white"
-          }`}
-        >
-          {title}
-        </div>
+        className="relative w-full h-full rounded-2xl overflow-hidden bg-cover bg-center flex flex-row items-center justify-between px-6 z-30"
+        style={{
+          backgroundImage:
+            effectiveHover && !comingSoon
+              ? `url(${cardImages?.[0]})`
+              : "none",
+          backgroundColor: comingSoon
+            ? "rgba(255, 255, 255, 0.1)"
+            : effectiveHover
+            ? "transparent"
+            : bgColor,
+          filter: comingSoon ? "brightness(85%)" : "none",
+        }}
+        initial={{ scale: 1 }}
+        animate={{
+          scale: effectiveHover && !comingSoon ? 1.03 : 1,
+          y: effectiveHover && !comingSoon ? -3 : 0,
+        }}
+        transition={{ type: "spring", stiffness: 240, damping: 18 }}
+      >
+        {/* Title */}
+        {!hovered && (
+          <>
+            <div className="flex flex-col md:flex-row md:justify-between w-full md:items-center">
+              <div
+                className={`text-2xl font-bold ${
+                  comingSoon ? "text-black" : "text-white"
+                }`}
+              >
+                {title}
+              </div>
 
-        {/* Subtitle */}
-        <div
-          className={`text-sm font-medium ${
-            comingSoon ? "text-black" : "text-white"
-          }`}
-        >
-          {comingSoon ? "TO BE RELEASED" : subtitle}
-        </div>
-      </div>
-       
-      <img className="block md:hidden w-14 h-14 object-contain" src={imgLogo} />
-    </>
-  )}
-</motion.div>
+              {/* Subtitle */}
+              <div
+                className={`text-sm font-medium ${
+                  comingSoon ? "text-black" : "text-white"
+                }`}
+              >
+                {comingSoon ? "TO BE RELEASED" : subtitle}
+              </div>
+            </div>
+             
+            <img className="block md:hidden w-14 h-14 object-contain" src={imgLogo} />
+          </>
+        )}
+      </motion.div>
     </div>
   );
 };
