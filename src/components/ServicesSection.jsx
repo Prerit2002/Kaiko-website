@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Services from "../assets/Services.png";
 import { ArrowUp } from "lucide-react";
 import BottomLogo from "../assets/BottomLogo.png";
+import BottomArrow from "../assets/BottomArrow.png";
 
 const ServicesSection = () => {
   return (
@@ -52,21 +53,21 @@ const ServicesSection = () => {
               </a>
               <a
                 href="mailto:contact@thekaikostudios.com"
-                className="  text-yellow-400 border border-blue-400/80 rounded-full px-3 py-1.5 sm:px-4 sm:py-2 md:text-xl text-sm  hover:bg-yellow-400 hover:text-black transition-all duration-300  hover:shadow-xl transform hover:scale-105"
+                className="w-full sm:w-auto block  text-yellow-400 border border-blue-400/80 rounded-full px-3 py-1.5 sm:px-4 sm:py-2 md:text-xl text-sm  hover:bg-yellow-400 hover:text-black transition-all duration-300  hover:shadow-xl transform hover:scale-105 text-center"
               >
-                <span className="hidden sm:inline">contact@thekaikostudios.com</span>
-                <span className="sm:hidden">Email Us</span>
+                <span className="inline">contact@thekaikostudios.com</span>
+                {/* <span className="sm:hidden">Email Us</span> */}
               </a>
             </div>
 
             {/* Arrow Icon */}
             <div className="hidden md:flex justify-end sm:justify-center w-full sm:w-auto">
               <div
-                className="bg-yellow-400 p-2.5 sm:p-3 rounded-full cursor-pointer hover:bg-yellow-300 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-110 hover:rotate-12"
+                className=" p-2.5 sm:p-3 rounded-full cursor-pointer  transition-all duration-300  hover:shadow-xl transform hover:scale-110 hover:rotate-12"
                 onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                 aria-label="Scroll to top"
               >
-                <ArrowUp className="text-black w-4 h-4 sm:w-5 sm:h-5" />
+                <img src={BottomArrow} className="text-black w-10 h-10 " />
               </div>
             </div>
           </div>
@@ -81,11 +82,11 @@ const ServicesSection = () => {
             </span>
              <div className="md:hidden flex justify-end sm:justify-center w-full sm:w-auto">
               <div
-                className="bg-yellow-400 p-2.5 sm:p-3 rounded-full cursor-pointer hover:bg-yellow-300 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-110 hover:rotate-12"
+                className=" p-2.5 sm:p-3 rounded-full cursor-pointer hover:bg-yellow-300 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-110 hover:rotate-12"
                 onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                 aria-label="Scroll to top"
               >
-                <ArrowUp className="text-black w-4 h-4 sm:w-5 sm:h-5" />
+                <img src={BottomArrow} className="text-black w-6 h-6" />
               </div>
             </div>
           </div>

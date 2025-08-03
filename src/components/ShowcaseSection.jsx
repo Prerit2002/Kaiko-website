@@ -19,6 +19,11 @@ import Clodor1 from "../assets/HoverImages/Clodor/1.png";
 import Clodor2 from "../assets/HoverImages/Clodor/2.png";
 import Clodor3 from "../assets/HoverImages/Clodor/3.png";
 import Clodor4 from "../assets/HoverImages/Clodor/4.png";
+import ClodorLogo from "../assets/Dukkaan/Rectangle.png"
+import BartenderLogo from "../assets/Duggu/beer.png";
+import DukkaanLogo from "../assets/Clodor/Frame404.svg";
+import DugguLogo from "../assets/Clenzi/Vector.png";
+import ClenziLogo from "../assets/Bartender/clenziLogo.png"
 
 export default function ShowcaseSection() {
   return (
@@ -37,6 +42,7 @@ export default function ShowcaseSection() {
           Duggu4,
         ]}
         redirectUrl="/duggu"
+        imgLogo={DugguLogo}
       />
       <HoverCard
         title="DUKAAN"
@@ -49,6 +55,7 @@ export default function ShowcaseSection() {
           Dukkaan4,
         ]}
         redirectUrl="/dukaan"
+        imgLogo={DukkaanLogo}
       />
       <HoverCard
         title="CLENZI"
@@ -61,6 +68,7 @@ export default function ShowcaseSection() {
           Clenzi4,
         ]}
         redirectUrl="/clenzi"
+        imgLogo={ClenziLogo}
       />
       <HoverCard
         title="THE BARTENDER"
@@ -73,6 +81,7 @@ export default function ShowcaseSection() {
           Bartender4,
         ]}
         redirectUrl="/bartender"
+        imgLogo={BartenderLogo}
       />
       <HoverCard
         title="CLODOR"
@@ -85,6 +94,7 @@ export default function ShowcaseSection() {
           Clodor4
         ]}
         redirectUrl="/clodor"
+        imgLogo={ClodorLogo}
       />
       <HoverCard
         title="TOPSERVE"

@@ -3,6 +3,18 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const HeroSection = () => {
   const [activeTab, setActiveTab] = useState("TEAM PLAY");
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Detect mobile
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 767px)");
+    const update = () => setIsMobile(mq.matches);
+    update();
+    mq.addEventListener ? mq.addEventListener("change", update) : mq.addListener(update);
+    return () => {
+      mq.removeEventListener ? mq.removeEventListener("change", update) : mq.removeListener(update);
+    };
+  }, []);
 
   // Growth section V-pattern
   const vPattern = [
@@ -27,13 +39,13 @@ const HeroSection = () => {
     { letter: " ", left: "63%", top: "0rem" },
     { letter: "Y", left: "66%", top: "0rem" },
     { letter: "O", left: "69%", top: "0rem" },
-    { letter: "U", left: "72%", top: "0rem" },
-    { letter: "R", left: "75%", top: "0rem" },
+    { letter: "U", left: "73%", top: "0rem" },
+    { letter: "R", left: "76%", top: "0rem" },
     { letter: " ", left: "78%", top: "0rem" },
     { letter: "G", left: "81%", top: "0rem" },
-    { letter: "O", left: "84%", top: "0rem" },
-    { letter: "A", left: "87%", top: "0rem" },
-    { letter: "L", left: "90%", top: "0rem" },
+    { letter: "O", left: "84.5%", top: "0rem" },
+    { letter: "A", left: "88%", top: "0rem" },
+    { letter: "L", left: "91%", top: "0rem" },
     
     // Line 2
     { letter: "T", left: "23%", top: "3rem" },
@@ -46,24 +58,23 @@ const HeroSection = () => {
     // Line 4
     { letter: "P", left: "25%", top: "8rem" },
     { letter: "I", left: "28%", top: "8rem" },
-    { letter: "S", left: "30%", top: "8rem" },
-    { letter: "A", left: "33%", top: "8rem" },
+    { letter: "S", left: "29%", top: "8rem" },
+    { letter: "A", left: "32%", top: "8rem" },
     { letter: "S", left: "36%", top: "8rem" },
   ];
-
 
   // Auto-carousel for tabs
   useEffect(() => {
     const tabs = ["TEAM PLAY", "GROWTH", "VATAVARAN"];
-    const interval = setInterval(() => {
-      setActiveTab(prevTab => {
-        const currentIndex = tabs.indexOf(prevTab);
-        const nextIndex = (currentIndex + 1) % tabs.length;
-        return tabs[nextIndex];
-      });
-    }, 5000); // Change every 5 seconds
+    // const interval = setInterval(() => {
+    //   setActiveTab(prevTab => {
+    //     const currentIndex = tabs.indexOf(prevTab);
+    //     const nextIndex = (currentIndex + 1) % tabs.length;
+    //     return tabs[nextIndex];
+    //   });
+    // }, 5000); // Change every 5 seconds
 
-    return () => clearInterval(interval);
+    // return () => clearInterval(interval);
   }, []);
 
   // Team Play Content Component
@@ -130,6 +141,7 @@ const HeroSection = () => {
       </div>
     </div>
   );
+
   // Vatavaran Content Component
   const VatavaranContent = () => (
   <div className="relative h-[12rem] flex flex-col items-center justify-center px-6 md:px-12">
@@ -203,8 +215,8 @@ const HeroSection = () => {
                 ? "bg-yellow-400 text-white"
                 : "border border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black"
             }`}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+            whileHover={!isMobile ? { scale: 1.05 } : {}}
+            whileTap={!isMobile ? { scale: 0.95 } : {}}
           >
             {tab}
           </motion.button>
@@ -228,10 +240,10 @@ const HeroSection = () => {
                   x: { type: "spring", stiffness: 300, damping: 30 },
                   opacity: { duration: 0.2 }
                 }}
-                drag="x"
+                drag={!isMobile ? "x" : false}
                 dragConstraints={{ left: 0, right: 0 }}
                 dragElastic={1}
-                onDragEnd={(e, { offset, velocity }) => {
+                onDragEnd={!isMobile ? (e, { offset, velocity }) => {
                   const swipe = swipePower(offset.x, velocity.x);
 
                   if (swipe < -swipeConfidenceThreshold) {
@@ -239,7 +251,7 @@ const HeroSection = () => {
                   } else if (swipe > swipeConfidenceThreshold) {
                     paginate(-1);
                   }
-                }}
+                } : undefined}
                 className="absolute inset-0"
               >
                 <TeamPlayContent />
@@ -259,10 +271,10 @@ const HeroSection = () => {
                   x: { type: "spring", stiffness: 300, damping: 30 },
                   opacity: { duration: 0.2 }
                 }}
-                drag="x"
+                drag={!isMobile ? "x" : false}
                 dragConstraints={{ left: 0, right: 0 }}
                 dragElastic={1}
-                onDragEnd={(e, { offset, velocity }) => {
+                onDragEnd={!isMobile ? (e, { offset, velocity }) => {
                   const swipe = swipePower(offset.x, velocity.x);
 
                   if (swipe < -swipeConfidenceThreshold) {
@@ -270,7 +282,7 @@ const HeroSection = () => {
                   } else if (swipe > swipeConfidenceThreshold) {
                     paginate(-1);
                   }
-                }}
+                } : undefined}
                 className="absolute inset-0"
               >
                 <GrowthContent />
@@ -290,10 +302,10 @@ const HeroSection = () => {
                   x: { type: "spring", stiffness: 300, damping: 30 },
                   opacity: { duration: 0.2 }
                 }}
-                drag="x"
+                drag={!isMobile ? "x" : false}
                 dragConstraints={{ left: 0, right: 0 }}
                 dragElastic={1}
-                onDragEnd={(e, { offset, velocity }) => {
+                onDragEnd={!isMobile ? (e, { offset, velocity }) => {
                   const swipe = swipePower(offset.x, velocity.x);
 
                   if (swipe < -swipeConfidenceThreshold) {
@@ -301,7 +313,7 @@ const HeroSection = () => {
                   } else if (swipe > swipeConfidenceThreshold) {
                     paginate(-1);
                   }
-                }}
+                } : undefined}
                 className="absolute inset-0"
               >
                 <VatavaranContent />

@@ -62,29 +62,46 @@ export default function OurMojoSection() {
       </motion.p>
 
       {/* GRID */}
-      <div className="grid md:grid-cols-3 gap-4">
-        {services.map((service, index) => (
-          <motion.div
-            key={service.title}
-            initial="hidden"
-            whileInView="visible"
-            variants={fadeUp(0.3 + index * 0.1)}
-            viewport={{ once: true }}
-            className="bg-[#007AFF] p-6 rounded-xl flex flex-col justify-between"
-            whileHover={{ scale: 1.03 }}
-            transition={{ type: "spring", stiffness: 200, damping: 18 }}
-          >
-            <ul className="text-[#FFE600] text-left  pl-4 text-xl md:text-3xl">
-              {service.items.map((item, i) => (
-                <li key={i}>{item}</li>
-              ))}
-            </ul>
-            <h3 className="text-left text-3xl md:text-5xl font-medium text-white mt-10 md:mt-20 pt-4 pl-4">
-              {service.title}
-            </h3>
-          </motion.div>
-        ))}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+  {services.map((service, index) => (
+    <motion.div
+      key={service.title}
+      initial="hidden"
+      whileInView="visible"
+      variants={fadeUp(0.3 + index * 0.1)}
+      viewport={{ once: true }}
+      className="bg-[#007AFF] p-6 rounded-xl flex md:flex-col justify-between relative h-48 md:h-auto"
+      whileHover={{ scale: 1.03 }}
+      transition={{ type: "spring", stiffness: 200, damping: 18 }}
+    >
+      {/* Mobile: Left vertical title using writing-mode - bottom to top */}
+      <div className="md:hidden absolute left-2 bottom-6 max-h-36">
+        <h3 className="text-xl font-medium text-white rotate-180" 
+            style={{ writingMode: 'vertical-lr', textOrientation: 'mixed' }}>
+          {service.title}
+        </h3>
       </div>
+
+      {/* Mobile: Right aligned items with left margin to avoid title overlap */}
+      <ul className="md:hidden text-[#FFE600] text-right text-xl ml-12 flex-1 flex flex-col justify-center">
+        {service.items.map((item, i) => (
+          <li key={i}>{item}</li>
+        ))}
+      </ul>
+
+      {/* Desktop Layout - unchanged */}
+      <ul className="hidden md:block text-[#FFE600] text-left pl-4 text-xl md:text-3xl">
+        {service.items.map((item, i) => (
+          <li key={i}>{item}</li>
+        ))}
+      </ul>
+      <h3 className="hidden md:block text-left text-3xl md:text-5xl font-medium text-white mt-10 md:mt-20 pt-4 pl-4">
+        {service.title}
+      </h3>
+    </motion.div>
+  ))}
+</div>
+       
 
       {/* PINK CTA BAR */}
       <motion.div

@@ -27,17 +27,17 @@ export default function CreativeApproachSection() {
             variants={rowVariants}
             whileHover="hover"
           >
-            <div className=" md:flex items-center justify-center pr-4 w-12">
+            <div className=" flex items-center justify-center pr-4 w-12">
               <div className="rotate-[-90deg] origin-center text-black text-sm font-bold tracking-tight whitespace-nowrap">
                 HUM KAUN?
               </div>
             </div>
-            <div className="flex-1 text-2xl md:text-7xl  font-medium leading-tight relative">
-              WE <span className="font-bold">DESIGN</span> AND{" "}
+            <div className="flex-1 text-2xl md:text-7xl  font-medium leading-tight relative text-right md:text-left">
+              WE <br className="md:hidden" /> <span className="font-bold">DESIGN</span> AND{" "}
               <span className="font-bold">LAUNCH</span>
               <br />
               THE CREATIVELY DIFFERENT
-              <span className="absolute right-0 bottom-0 text-black text-base align-middle">
+              <span className="hidden md:absolute right-0 bottom-0 text-black text-base align-middle">
                 by:
               </span>
             </div>
@@ -53,16 +53,16 @@ export default function CreativeApproachSection() {
             variants={rowVariants}
             whileHover="hover"
           >
-            <div className="hmd:flex items-center justify-center pr-4 w-12">
+            <div className="flex items-center justify-center pr-4 w-12">
               <div className="rotate-[-90deg] origin-center text-black text-sm font-bold tracking-tight whitespace-nowrap">
                 APPROACH
               </div>
             </div>
-            <div className="flex-1 text-2xl md:text-7xl font-medium leading-tight relative">
-              LEVERAGING EVERY BIT OF
+            <div className="flex-1 text-2xl md:text-7xl font-medium leading-tight relative text-right md:text-left">
+              LEVERAGING <br className="md:hidden" /> EVERY BIT OF
               <br />
-              DATA
-              <span className="absolute right-0 bottom-0 text-black text-base align-middle">
+              <span className="font-bold">DATA</span>
+              <span className="hidden md:absolute right-0 bottom-0 text-black text-base align-middle">
                 to:
               </span>
             </div>
@@ -78,12 +78,12 @@ export default function CreativeApproachSection() {
             variants={rowVariants}
             whileHover="hover"
           >
-            <div className="md:flex items-center justify-center pr-4 w-12">
+            <div className="flex items-center justify-center pr-4 w-12">
               <div className="rotate-[-90deg] origin-center text-black text-sm font-bold tracking-tight whitespace-nowrap">
                 GOAL
               </div>
             </div>
-            <div className="text-2xl text-2xl md:text-7xl font-medium leading-tight">
+            <div className="text-2xl text-2xl md:text-7xl font-medium leading-tight text-right md:text-left">
               EXECUTE UNCONVENTION–
               <br />
               AL SOLUTIONS
