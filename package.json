@@ -2,7 +2,7 @@
   "name": "kaiko-site",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Prerit2002.github.io/Kaiko-website",
+  "homepage": "https://thekaikostudios.com",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
