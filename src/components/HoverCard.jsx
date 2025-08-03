@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import Rectangle from "../assets/Dukkaan/Rectangle.png"
 
 const HoverCard = ({
   title,
@@ -10,7 +9,7 @@ const HoverCard = ({
   cardImages,
   comingSoon = false,
   redirectUrl,
-  imgLogo = null
+  imgLogo,
 }) => {
   const [hovered, setHovered] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -34,14 +33,11 @@ const HoverCard = ({
     }
   };
 
-  // Only allow hover effects on desktop (not mobile) and when not coming soon
-  const effectiveHover = !isMobile && !comingSoon && hovered;
+  const effectiveHover = !isMobile && hovered;
 
   return (
     <div
-      className={`relative w-full h-[120px] mx-auto overflow-visible transition-all duration-300 ease-in-out cursor-pointer ${
-        isMobile ? "my-5" : "my-5 hover:my-14"
-      }`}
+      className="relative w-full h-[120px] mx-auto overflow-visible my-5 hover:my-14 transition-all duration-300 ease-in-out cursor-pointer"
       onMouseEnter={() => {
         if (!comingSoon && !isMobile) setHovered(true);
       }}
@@ -50,7 +46,7 @@ const HoverCard = ({
       }}
       onClick={handleClick}
     >
-      {/* Stacked Pyramid Cards - only on desktop when not coming soon */}
+      {/* Stacked Pyramid Cards - only on desktop and when not coming soon */}
       {!comingSoon &&
         !isMobile &&
         cardImages?.slice(1).map((img, index) => {
@@ -89,7 +85,10 @@ const HoverCard = ({
       <motion.div
   className="relative w-full h-full rounded-2xl overflow-hidden bg-cover bg-center flex flex-row items-center justify-between px-6 z-30"
   style={{
-    backgroundImage: effectiveHover ? `url(${cardImages?.[0]})` : "none",
+    backgroundImage:
+      effectiveHover && !comingSoon
+        ? `url(${cardImages?.[0]})`
+        : "none",
     backgroundColor: comingSoon
       ? "rgba(255, 255, 255, 0.1)"
       : effectiveHover
@@ -99,15 +98,15 @@ const HoverCard = ({
   }}
   initial={{ scale: 1 }}
   animate={{
-    scale: effectiveHover ? 1.03 : 1,
-    y: effectiveHover ? -3 : 0,
+    scale: effectiveHover && !comingSoon ? 1.03 : 1,
+    y: effectiveHover && !comingSoon ? -3 : 0,
   }}
   transition={{ type: "spring", stiffness: 240, damping: 18 }}
 >
-  {/* Title and Subtitle - Always show on mobile, conditionally on desktop */}
-  {(isMobile || !effectiveHover) && (
+  {/* Title */}
+  {!hovered && (
     <>
-      <div className="flex-1">
+      <div className="flex flex-col md:flex-row md:justify-between w-full md:items-center">
         <div
           className={`text-2xl font-bold ${
             comingSoon ? "text-black" : "text-white"
@@ -125,21 +124,11 @@ const HoverCard = ({
           {comingSoon ? "TO BE RELEASED" : subtitle}
         </div>
       </div>
-        
-      { !comingSoon && imgLogo && (
-          <div className="flex-shrink-0">
-        <img
-          src={imgLogo}
-          alt="Rectangle Decoration"
-          className="w-14 h-14 object-contain"
-        />
-      </div>
-      )}
-      
+       
+      <img className="block md:hidden w-14 h-14 object-contain" src={imgLogo} />
     </>
   )}
 </motion.div>
-
     </div>
   );
 };
