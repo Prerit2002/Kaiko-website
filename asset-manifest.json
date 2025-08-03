@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Kaiko-website/static/css/main.d2ce2113.css",
-    "main.js": "/Kaiko-website/static/js/main.53ed9ee9.js",
+    "main.js": "/Kaiko-website/static/js/main.93256a7d.js",
     "static/js/453.aaadedc8.chunk.js": "/Kaiko-website/static/js/453.aaadedc8.chunk.js",
     "static/media/clodor.mp4": "/Kaiko-website/static/media/clodor.60cbe2eceef8f9d32ec9.mp4",
     "static/media/basantiforkaiko.mp4": "/Kaiko-website/static/media/basantiforkaiko.43a44ed40ecb9b2018a9.mp4",
@@ -59,11 +59,11 @@
     "static/media/clenzielements.png": "/Kaiko-website/static/media/clenzielements.cead4f6ae8165b6dcbf2.png",
     "index.html": "/Kaiko-website/index.html",
     "main.d2ce2113.css.map": "/Kaiko-website/static/css/main.d2ce2113.css.map",
-    "main.53ed9ee9.js.map": "/Kaiko-website/static/js/main.53ed9ee9.js.map",
+    "main.93256a7d.js.map": "/Kaiko-website/static/js/main.93256a7d.js.map",
     "453.aaadedc8.chunk.js.map": "/Kaiko-website/static/js/453.aaadedc8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d2ce2113.css",
-    "static/js/main.53ed9ee9.js"
+    "static/js/main.93256a7d.js"
   ]
 }
