@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import StepImg from "../assets/StepImg.png";
 
 const HeroSection = () => {
   const [activeTab, setActiveTab] = useState("TEAM PLAY");
@@ -113,20 +114,20 @@ const HeroSection = () => {
   // Auto-carousel for tabs
   useEffect(() => {
     const tabs = ["TEAM PLAY", "GROWTH", "VATAVARAN"];
-    // const interval = setInterval(() => {
-    //   setActiveTab(prevTab => {
-    //     const currentIndex = tabs.indexOf(prevTab);
-    //     const nextIndex = (currentIndex + 1) % tabs.length;
-    //     return tabs[nextIndex];
-    //   });
-    // }, 5000); // Change every 5 seconds
+    const interval = setInterval(() => {
+      setActiveTab(prevTab => {
+        const currentIndex = tabs.indexOf(prevTab);
+        const nextIndex = (currentIndex + 1) % tabs.length;
+        return tabs[nextIndex];
+      });
+    }, 5000); // Change every 5 seconds
 
-    // return () => clearInterval(interval);
+    return () => clearInterval(interval);
   }, []);
 
   // Team Play Content Component
   const TeamPlayContent = () => (
-    <div className="w-full h-[12rem] flex justify-center px-6 md:px-12 ">
+    <div className="w-full h-[8rem] md:h-[12rem] flex justify-center px-6 md:px-12 ">
       <div className="w-full max-w-6xl">
         {/* First line: "YOU ARE A PART OF" */}
         <div className="w-full">
@@ -169,9 +170,9 @@ const HeroSection = () => {
     const currentPattern = isMobile ? vPatternMobile : vPatternDesktop;
 
     return (
-      <div className="relative w-full h-[12rem] flex justify-center py-10 md:py-1 md:px-12">
+      <div className="relative w-full h-[8rem] md:h-[12rem] flex justify-center md:py-10 md:py-1 md:px-12">
         {/* Pattern Container */}
-        <div className="relative w-full max-w-7xl overflow-hidden mx-auto">
+        <div className="hidden md:block relative w-full max-w-7xl overflow-hidden mx-auto">
           {currentPattern.map((item, index) => (
             <motion.span
               key={index}
@@ -190,13 +191,23 @@ const HeroSection = () => {
             </motion.span>
           ))}
         </div>
+        <div>
+          <motion.img
+            src={StepImg}
+            alt="Step Image"
+            className="absolute md:hidden top-0 left-0 w-full h-full object-contain p-2"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          />
+        </div>
       </div>
     );
   };
 
   // Vatavaran Content Component
   const VatavaranContent = () => (
-    <div className="relative h-[12rem] flex flex-col items-center justify-center px-6 md:px-12">
+    <div className="relative h-[8rem] md:h-[12rem] flex flex-col items-center justify-center px-6 md:px-12">
       <motion.h1 
         className="text-2xl md:text-4xl lg:text-5xl font-bold text-center"
         initial={{ opacity: 0, y: -20 }}
@@ -277,7 +288,7 @@ const HeroSection = () => {
 
       {/* Content Area with Carousel */}
       <div className="relative bg-pink-600 rounded-xl py-8 md:py-10 mx-auto text-yellow-400 font-bold overflow-hidden">
-        <div className="relative h-[12rem]">
+        <div className="relative h-[8rem] md:h-[12rem]">
           <AnimatePresence mode="wait" custom={1}>
             {/* Team Play Content */}
             {activeTab === "TEAM PLAY" && (
