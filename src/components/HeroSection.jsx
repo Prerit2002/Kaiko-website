@@ -213,7 +213,7 @@ const HeroSection = () => {
             className={`rounded-full px-4 py-1 text-sm font-semibold transition-all duration-300 ${
               activeTab === tab
                 ? "bg-yellow-400 text-white"
-                : "border border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black"
+                : "border border-yellow-400 text-yellow-400 md:hover:bg-yellow-400 md:hover:text-black"
             }`}
             whileHover={!isMobile ? { scale: 1.05 } : {}}
             whileTap={!isMobile ? { scale: 0.95 } : {}}

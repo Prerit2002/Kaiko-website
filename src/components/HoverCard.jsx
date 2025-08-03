@@ -125,7 +125,10 @@ const HoverCard = ({
               </div>
             </div>
              
-            <img className="block md:hidden w-14 h-14 object-contain" src={imgLogo} />
+             { !comingSoon && imgLogo && (
+                <img className="block md:hidden w-14 h-14 object-contain" src={imgLogo} />
+             )}
+            
           </>
         )}
       </motion.div>
