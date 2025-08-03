@@ -16,14 +16,14 @@ const HeroSection = () => {
     { letter: "S", left: "22%", top: "0rem" },
     { letter: " ", left: "25%", top: "0rem" },
     { letter: "P", left: "39.5%", top: "0rem" },
-    { letter: " ", left: "41%", top: "0rem" },
-    { letter: "T", left: "42.5%", top: "0rem" },
-    { letter: "O", left: "45%", top: "0rem" },
-    { letter: "W", left: "48%", top: "0rem" },
-    { letter: "A", left: "51%", top: "0rem" },
-    { letter: "R", left: "54%", top: "0rem" },
-    { letter: "D", left: "57%", top: "0rem" },
-    { letter: "S", left: "60%", top: "0rem" },
+    { letter: " ", left: "42%", top: "0rem" },
+    { letter: "T", left: "43%", top: "0rem" },
+    { letter: "O", left: "45.5%", top: "0rem" },
+    { letter: "W", left: "49%", top: "0rem" },
+    { letter: "A", left: "53%", top: "0rem" },
+    { letter: "R", left: "56%", top: "0rem" },
+    { letter: "D", left: "59%", top: "0rem" },
+    { letter: "S", left: "62%", top: "0rem" },
     { letter: " ", left: "63%", top: "0rem" },
     { letter: "Y", left: "66%", top: "0rem" },
     { letter: "O", left: "69%", top: "0rem" },
@@ -113,7 +113,7 @@ const HeroSection = () => {
         {vPattern.map((item, index) => (
           <motion.span
             key={index}
-            className="absolute text-base sm:text-lg md:text-4xl"
+            className="absolute text-base md:text-4xl"
             style={{
               left: item.left,
               top: item.top,

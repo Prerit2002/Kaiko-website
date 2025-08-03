@@ -75,8 +75,20 @@ export default function ShowcaseSection() {
         redirectUrl="/bartender"
       />
       <HoverCard
-        title="CLENZI"
-        subtitle="PACKAGING"
+        title="CLODOR"
+        subtitle="WEB DESIGN"
+        bgColor="#000000"
+        cardImages={[
+          Clodor1,
+          Clodor2,
+          Clodor3,
+          Clodor4
+        ]}
+        redirectUrl="/clodor"
+      />
+      <HoverCard
+        title="TOPSERVE"
+        subtitle="To Be Released"
         bgColor="#EC4899"
         comingSoon={true}
       />

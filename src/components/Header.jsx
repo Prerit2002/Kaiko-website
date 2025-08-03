@@ -5,11 +5,11 @@ import Header1 from "../assets/Header.png";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 
 const navLinks = [
-  { name: "Services", href: "#services", isPage: false },
-  { name: "Work", href: "#work", isPage: false },
-  { name: "Contact", href: "#contact", isPage: false },
-  { name: "About", to: "/about", isPage: true },
-  { name: "Careers", to: "/career", isPage: true },
+  { name: "SERVICES", href: "#services", isPage: false },
+  { name: "WORK", href: "#work", isPage: false },
+  { name: "CONACT", href: "#contact", isPage: false },
+  { name: "ABOUT", to: "/about", isPage: true },
+  { name: "CAREERS", to: "/career", isPage: true },
 ];
 
 export default function Header() {
@@ -46,7 +46,7 @@ export default function Header() {
         </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex gap-24 font-semibold text-lg">
+        <nav className="hidden md:flex gap-32 font-semibold text-lg">
           {navLinks.map((link) =>
             link.isPage ? (
               <Link

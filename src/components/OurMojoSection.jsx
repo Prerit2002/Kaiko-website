@@ -92,7 +92,7 @@ export default function OurMojoSection() {
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.6 }}
         viewport={{ once: true }}
-        className="bg-[#EF4293] text-[#FFE600] text-3xl md:text-6xl font-semibold py-2  px-6 rounded-xl"
+        className="bg-pink-600 text-[#FFE600] text-3xl md:text-6xl font-semibold py-2  px-6 rounded-xl"
       >
         <motion.span
           animate={{ opacity: [1, 0.85, 1] }}
