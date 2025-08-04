@@ -114,15 +114,15 @@ const HeroSection = () => {
   // Auto-carousel for tabs
   useEffect(() => {
     const tabs = ["TEAM PLAY", "GROWTH", "VATAVARAN"];
-    const interval = setInterval(() => {
-      setActiveTab(prevTab => {
-        const currentIndex = tabs.indexOf(prevTab);
-        const nextIndex = (currentIndex + 1) % tabs.length;
-        return tabs[nextIndex];
-      });
-    }, 5000); // Change every 5 seconds
+    // const interval = setInterval(() => {
+    //   setActiveTab(prevTab => {
+    //     const currentIndex = tabs.indexOf(prevTab);
+    //     const nextIndex = (currentIndex + 1) % tabs.length;
+    //     return tabs[nextIndex];
+    //   });
+    // }, 5000); // Change every 5 seconds
 
-    return () => clearInterval(interval);
+    // return () => clearInterval(interval);
   }, []);
 
   // Team Play Content Component
