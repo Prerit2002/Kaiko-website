@@ -170,13 +170,18 @@ export default function Clenzi() {
       </motion.div>
 
       {/* Mobile Mockup */}
-      <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="mt-5">
-        <img
-          src={Clenzi1}
-          alt="Clenzi Mobile Mockup"
-          className="w-full h-auto rounded-[3.5rem] shadow-lg"
-        />
-      </motion.div>
+    <motion.div 
+  initial={{ opacity: 0, y: 10 }} 
+  animate={{ opacity: 1, y: 0 }} 
+  transition={{ duration: 0.5 }} 
+  className="mt-5 overflow-hidden rounded-lg md:rounded-2xl "
+>
+  <img
+    src={Clenzi1}
+    alt="Clenzi Mobile Mockup"
+    className="w-full h-auto shadow-lg scale-125"
+  />
+</motion.div>
 
       <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.1 }} className="mt-5">
         <img
