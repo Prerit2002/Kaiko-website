@@ -100,6 +100,8 @@ export default function Duggu() {
           muted
           loop
           playsInline
+          preload="metadata"
+          controls={false}
           className="w-full h-auto rounded-[6.5rem] shadow-lg object-cover"
         />
 
@@ -109,6 +111,8 @@ export default function Duggu() {
           muted
           loop
           playsInline
+          preload="metadata"
+          controls={false}
           className="w-full h-auto rounded-[6.5rem] shadow-lg object-cover"
         />
 
@@ -118,6 +122,8 @@ export default function Duggu() {
           muted
           loop
           playsInline
+          preload="metadata"
+          controls={false}
           className="w-full h-auto rounded-[6.5rem] shadow-lg object-cover"
         />
       </div>
