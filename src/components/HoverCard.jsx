@@ -46,7 +46,8 @@ const HoverCard = ({
 
   return (
     <div
-      className="relative w-full h-[120px] mx-auto overflow-visible my-5 md:hover:my-14 transition-all duration-300 ease-in-out cursor-pointer"
+      className={`relative w-full h-[120px] mx-auto overflow-visible my-5 transition-all duration-300 ease-in-out cursor-pointer
+    ${!comingSoon ? "md:hover:my-14" : ""}`}
       onMouseEnter={() => {
         if (!comingSoon && !isMobile) setHovered(true);
       }}

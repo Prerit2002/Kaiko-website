@@ -30,7 +30,7 @@ const handleClick = () => {
                 onClick={handleClick}
             >
                 <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold leading-tight">
-                GO TO OUR Work
+                GO TO OUR WORK
                 </h2>
             </motion.div>
             <ServicesSection />

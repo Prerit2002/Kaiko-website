@@ -13,10 +13,10 @@ const rowVariants = {
 
 export default function CreativeApproachSection() {
   return (
-    <section className="bg-[#FFE600] text-[#FF00C7] w-full rounded-xl md:rounded-2xl overflow-hidden relative">
+    <section className="bg-[#FFE600] text-[#EF4293] w-full rounded-xl md:rounded-2xl overflow-hidden relative">
       <div className="flex flex-col md:flex-row">
         {/* Main Content */}
-        <div className="flex-1 flex flex-col divide-y divide-[#FF00C7]/40 px-4 md:px-6 lg:px-10 py-6 space-y-6">
+        <div className="flex-1 flex flex-col divide-y divide-[#EF4293]/40 px-4 md:px-6 lg:px-10 py-6 space-y-6">
           {/* Row 1 */}
           <motion.div
             className="flex items-center"
@@ -34,9 +34,9 @@ export default function CreativeApproachSection() {
             </div>
             <div className="flex-1 text-2xl md:text-7xl  font-medium leading-tight relative text-right md:text-left">
               WE <br className="md:hidden" /> <span className="font-bold">DESIGN</span> AND{" "}
-              <span className="font-bold">LAUNCH</span>
+              <span className="font-bold">LAUNCH</span> <span className="hidden md:inline">THE</span> 
               <br />
-              THE CREATIVELY DIFFERENT
+               <span className="block text-right  md:mr-12"> <span className="inline md:hidden">THE</span> CREATIVELY DIFFERENT</span> 
               <span className="hidden md:block md:absolute right-0 bottom-0 text-black text-base align-middle">
                 by:
               </span>
@@ -83,7 +83,7 @@ export default function CreativeApproachSection() {
                 GOAL
               </div>
             </div>
-            <div className="text-2xl text-2xl md:text-7xl font-medium leading-tight text-right md:text-left">
+            <div className="w-full text-2xl text-2xl md:text-7xl font-medium leading-tight text-right md:mr-12">
               EXECUTE UNCONVENTION–
               <br />
               AL SOLUTIONS

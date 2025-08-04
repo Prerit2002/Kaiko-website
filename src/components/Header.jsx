@@ -48,13 +48,13 @@ export default function Header() {
         </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex gap-32 font-normal text-lg">
+        <nav className="hidden md:flex gap-24 font-normal text-lg">
           {navLinks.map((link) =>
             link.isPage ? (
               <Link
                 key={link.name}
                 to={link.to}
-                className="text-pink-500 hover:text-pink-300 transition"
+                className="text-[#EF4293] hover:text-pink-600 transition"
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}

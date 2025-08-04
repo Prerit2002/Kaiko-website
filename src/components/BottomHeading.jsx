@@ -21,7 +21,7 @@ export default function BottomHeading({ title, subtitle , subtitle2, redirectUrl
             {subtitle2 && <p className="text-[10px] md:text-lg text-gray-400">{subtitle2}</p>}
         </div>
       
-      <img src={subtitle} alt="Placeholder" className="rounded-lg shadow-lg w-16 md:w-17" />
+      <img src={subtitle} alt="Placeholder" className="rounded-lg shadow-lg w-16 md:w-28" />
     </div>
   );
 }

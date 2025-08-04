@@ -9,6 +9,7 @@ import Frame3 from "../assets/Dukkaan/Frame3.png";
 import butterig1 from "../assets/Dukkaan/butterig1.png";
 import cheeseig1 from "../assets/Dukkaan/cheeseig1.png";
 import truffleig1 from "../assets/Dukkaan/truffleig1.png";
+import Dugguface from "../assets/Duggu/Dugguface.png"
 import POPCORNMOCKUPS1 from "../assets/Dukkaan/POPCORNMOCKUPS1.png";
 import ZOOMIN1 from "../assets/Dukkaan/ZOOMIN1.png";
 import Circular from "../assets/Dukkaan/Circular.png";
@@ -74,7 +75,7 @@ export default function Dukkaan() {
       >
         <h2 className="text-4xl font-bold text-white mb-2 md:mb-0">Dukaan</h2>
         <p className="text-base md:text-3xl text-white text-center md:text-right font-semibold">
-          A <span className="text-[#F9D8C9]">Healthy</span> Snack App
+          A <span className="text-[#F9D8C9]">Healthy</span> Snack Shop
         </p>
       </motion.div>
 
@@ -178,10 +179,14 @@ export default function Dukkaan() {
       </div>
 
       <BottomHeading
-        title="Go to clodor"
-        subtitle={Rectangle}
-        subtitle2="CLODOR"
-        redirectUrl="/clodor"
+        title="Go to Duggu"
+        subtitle={Dugguface}
+        subtitle2={
+                <>
+                    An <span className="inline text-[#611AA1]">AI storytelling companion</span> for children
+                </>
+                }
+        redirectUrl="/duggu"
       />
       <ServicesSection />
     </div>

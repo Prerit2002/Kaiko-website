@@ -8,6 +8,7 @@ import Clenzielements from "../assets/Clenzi/clenzielements.png";
 import Clenzi1 from "../assets/Clenzi/Clenzi.jpg";
 import Frame2059 from "../assets/Clenzi/Frame2059.png";
 import Vector from "../assets/Clenzi/Vector.png";
+import Clodor from "../assets/Clodor.png"
 
 import AdultsBlue from "../assets/Clenzi/videos/AdultsBlue.mp4";
 import KidsYellow from "../assets/Clenzi/videos/KidsYellow.mp4";
@@ -203,14 +204,14 @@ export default function Clenzi() {
       {/* Footer CTA */}
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6, delay: 0.3 }}>
         <BottomHeading
-          title="Go to duggu"
-          subtitle={Vector}
+          title="Go to Clodor"
+          subtitle={Clodor}
           subtitle2={
             <>
-              An <span className="inline text-[#611AA1]">AI storytelling companion</span> for children
+              A Web Project for ethnic wear
             </>
           }
-          redirectUrl="/duggu"
+          redirectUrl="/clodor"
         />
       </motion.div>
 
