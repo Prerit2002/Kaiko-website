@@ -1,6 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
 import Services from "../assets/Services.png";
 import { ArrowUp } from "lucide-react";
 import BottomLogo from "../assets/BottomLogo.png";
@@ -8,34 +6,10 @@ import BottomArrow from "../assets/BottomArrow.png";
 import FooterMobile from "../assets/FooterMobile.png";
 
 const ServicesSection = () => {
-  const navigate = useNavigate();
-
-const handleClick = () => {
-  navigate('/');
-  // Small delay to ensure page loads before scrolling
-  setTimeout(() => {
-    const servicesSection = document.getElementById('services');
-    if (servicesSection) {
-      servicesSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  }, 100);
-};
   return (
     <section id="contact" className="text-white flex flex-col items-center rounded-lg w-full space-y-3">
       {/* Title */}
-      <motion.div
-        initial={{ opacity: 0, y: 12 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        viewport={{ once: true }}
-        className="bg-black text-center  w-full rounded-xl md:rounded-2xl p-4 sm:p-6"
-        onClick={handleClick}
-      >
-        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold leading-tight">
-          GO TO OUR SERVICES
-        </h2>
-        <p className="text-xs sm:text-sm mt-1">AKA OUR MOJO</p>
-      </motion.div>
+      
 
       {/* Card with background image and overlay content */}
       <div className="relative w-full rounded-xl md:rounded-2xl  overflow-hidden  md:h-[100vh]">
