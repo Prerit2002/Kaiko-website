@@ -130,7 +130,7 @@ const HoverCard = ({
 
               {/* Subtitle */}
               <div
- className="text-sm font-medium"
+ className="text-sm md:text-xl font-medium"
  style={{ color: comingSoon ? 'black' : txtColor }}
 >
                 {comingSoon ? "TO BE RELEASED" : subtitle}
