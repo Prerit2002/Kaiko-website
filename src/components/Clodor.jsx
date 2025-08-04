@@ -23,7 +23,7 @@ export default function Clodor() {
     For Ethnic Wear
   </p>
 </div>
-            <div className="flex justify-center items-center bg-black mt-2 p-8 rounded-lg shadow-lg text-xl font-bold">
+            <div className="flex justify-center items-center bg-black mt-2 p-8 rounded-lg shadow-lg text-xs md:text-xl font-bold">
                 <span>A one-stop men's wedding fashion store</span>
             </div>
             <img

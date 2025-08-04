@@ -171,10 +171,10 @@ export default function Duggu() {
       </div>
 
       <div className="grid grid-cols-2 gap-4 mt-5">
-        <div className="flex justify-center items-center bg-[#611AA1] p-8 rounded-xl md:rounded-2xl shadow-lg text-lg font-semibold">
+        <div className="flex justify-center items-center text-center bg-[#611AA1] p-4 md:p-8 rounded-xl md:rounded-2xl shadow-lg text-lg font-semibold">
           No Gender
         </div>
-        <div className="flex justify-center items-center bg-[#611AA1]  p-8 rounded-xl md:rounded-2xl shadow-lg text-lg font-semibold">
+        <div className="flex justify-center items-center text-center bg-[#611AA1] p-4 md:p-8 rounded-xl md:rounded-2xl shadow-lg text-lg font-semibold">
           Many Colours
         </div>
       </div>

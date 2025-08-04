@@ -58,7 +58,7 @@ export default function Clenzi() {
             key={i}
             variants={sectionFade}
             custom={i}
-            className="flex justify-center items-center p-4 md:p-8 rounded-xl md:rounded-2xl md:rounded-2xl shadow-xl text-xl md:text-3xl font-semibold"
+            className="flex justify-center items-center p-4 md:p-8 rounded-xl md:rounded-2xl md:rounded-2xl shadow-xl text-lg md:text-3xl font-semibold"
             style={{ backgroundColor: item.bg }}
           >
             {item.label}
@@ -165,7 +165,7 @@ export default function Clenzi() {
         initial={{ scale: 0.9, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className="flex justify-center items-center bg-black mt-6 p-8 rounded-xl md:rounded-2xl md:rounded-2xl shadow-lg text-3xl font-bold"
+        className="flex justify-center items-center text-center bg-black mt-6 px-3 py-6 md:p-8 rounded-xl md:rounded-2xl md:rounded-2xl shadow-lg text-3xl font-bold"
       >
         <span>30% chance of disposable awareness</span>
       </motion.div>
