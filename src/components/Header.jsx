@@ -80,7 +80,7 @@ export default function Header() {
         </button>
 
         {/* Tagline */}
-        <div className="text-yellow-400 font-light leading-tight text-lg hidden md:block md:text-xl lg:text-2xl mt-2 md:mt-0 font-clash">
+        <div className="text-yellow-400 font-light leading-tight text-right text-lg hidden md:block md:text-xl lg:text-2xl mt-2 md:mt-0 font-clash">
           <div>Crafting Design</div>
           <div>Experiences</div>
         </div>

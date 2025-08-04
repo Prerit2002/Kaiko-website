@@ -40,7 +40,7 @@ export default function OurMojoSection() {
         whileInView="visible"
         variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
         viewport={{ once: true, amount: 0.3 }}
-        className="bg-[#007AFF] py-6 rounded-xl md:rounded-2xl"
+        className="bg-[#007AFF] py-6 md:py-8 rounded-xl md:rounded-2xl"
       >
         <motion.h2
           variants={fadeUp(0)}
@@ -109,7 +109,7 @@ export default function OurMojoSection() {
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.6 }}
         viewport={{ once: true }}
-        className="bg-pink-600 text-[#FFE600] text-3xl md:text-6xl font-semibold py-2  px-6 rounded-xl md:rounded-2xl"
+        className="bg-pink-600 text-[#FFE600] text-3xl md:text-6xl font-semibold py-5  px-6 rounded-xl md:rounded-2xl"
       >
         <motion.span
           animate={{ opacity: [1, 0.85, 1] }}

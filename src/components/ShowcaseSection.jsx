@@ -28,7 +28,7 @@ import ClenziLogo from "../assets/ClenziMobile.png"
 export default function ShowcaseSection() {
   return (
     <section id="work" className="w-full">
-      <div className="bg-yellow-400  rounded-full py-3 text-center mx-auto text-black font-normal text-md md:text-xl font-clash">
+      <div className="bg-yellow-400  rounded-full py-2 text-center mx-auto text-black font-normal text-md md:text-xl font-clash">
         BEHOLD
       </div>
       <HoverCard
