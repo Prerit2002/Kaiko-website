@@ -63,7 +63,7 @@ export default function Dukkaan() {
   return (
     <div
       style={{ backgroundColor: "#151515" }}
-      className="min-h-screen text-white p-5"
+      className="min-h-screen text-white p-5 space-y-3"
     >
       <Header />
 
@@ -93,7 +93,7 @@ export default function Dukkaan() {
         <motion.img
           src={Circular}
           alt="Dukkaan Project"
-          className="max-w-full max-h-[70vh] w-auto h-auto rounded-lg object-contain mx-auto p-5"
+          className="max-w-full max-h-[60vh] w-auto h-auto rounded-lg object-contain mx-auto p-5"
           initial={{ scale: 0.9, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.8 }}
