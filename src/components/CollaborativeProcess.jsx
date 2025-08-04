@@ -17,7 +17,7 @@ const CollaborativeDesignProcess = () => {
         {steps.map((step, index) => (
           <div
             key={index}
-            className="bg-blue-600 text-black font-bold text-center py-2 px-1 md:py-4 md:px-2 rounded-xl text-[8px] md:text-3xl"
+            className="bg-blue-600 text-black font-bold text-center py-2 px-1 md:py-4 md:px-2 rounded-xl md:rounded-2xl text-[8px] md:text-3xl"
           >
             {step}
           </div>

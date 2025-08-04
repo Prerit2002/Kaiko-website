@@ -70,7 +70,7 @@ export default function Dukkaan() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="flex flex-col md:flex-row md:justify-between items-center bg-black my-3 p-4 md:p-8 rounded-xl shadow-lg"
+        className="flex flex-col md:flex-row md:justify-between items-center bg-black my-3 p-4 md:p-8 rounded-xl md:rounded-2xl shadow-lg"
       >
         <h2 className="text-4xl font-bold text-white mb-2 md:mb-0">Dukaan</h2>
         <p className="text-base md:text-3xl text-white text-center md:text-right font-semibold">
@@ -173,7 +173,7 @@ export default function Dukkaan() {
         ))}
       </div>
 
-      <div className="flex justify-center items-center bg-black mt-2 p-8 rounded-xl shadow-lg text-xl font-bold">
+      <div className="flex justify-center items-center bg-black mt-2 p-8 rounded-xl md:rounded-2xl shadow-lg text-xl font-bold">
         <span>More to Come</span>
       </div>
 

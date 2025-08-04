@@ -40,7 +40,7 @@ export default function OurMojoSection() {
         whileInView="visible"
         variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
         viewport={{ once: true, amount: 0.3 }}
-        className="bg-[#007AFF] py-6 rounded-xl"
+        className="bg-[#007AFF] py-6 rounded-xl md:rounded-2xl"
       >
         <motion.h2
           variants={fadeUp(0)}
@@ -56,7 +56,7 @@ export default function OurMojoSection() {
         whileInView="visible"
         variants={fadeUp(0.2)}
         viewport={{ once: true }}
-        className="bg-[#007AFF] uppercase text-sm tracking-wide text-white/80 rounded-xl p-2 font-clash"
+        className="bg-[#007AFF] uppercase text-sm tracking-wide text-white/80 rounded-xl md:rounded-2xl p-2 font-clash"
       >
         AKA OUR SERVICES
       </motion.p>
@@ -70,7 +70,7 @@ export default function OurMojoSection() {
       whileInView="visible"
       variants={fadeUp(0.3 + index * 0.1)}
       viewport={{ once: true }}
-      className="bg-[#007AFF] p-6 rounded-xl flex md:flex-col justify-between relative h-48 md:h-auto"
+      className="bg-[#007AFF] p-6 rounded-xl md:rounded-2xl flex md:flex-col justify-between relative h-48 md:h-auto"
       whileHover={{ scale: 1.03 }}
       transition={{ type: "spring", stiffness: 200, damping: 18 }}
     >
@@ -109,7 +109,7 @@ export default function OurMojoSection() {
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.6 }}
         viewport={{ once: true }}
-        className="bg-pink-600 text-[#FFE600] text-3xl md:text-6xl font-semibold py-2  px-6 rounded-xl"
+        className="bg-pink-600 text-[#FFE600] text-3xl md:text-6xl font-semibold py-2  px-6 rounded-xl md:rounded-2xl"
       >
         <motion.span
           animate={{ opacity: [1, 0.85, 1] }}

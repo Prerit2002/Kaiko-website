@@ -18,7 +18,7 @@ export default function Clenzi() {
   const sectionFade = { hidden: { opacity: 0, y: 20 }, visible: (i = 0) => ({ opacity: 1, y: 0, transition: { delay: i * 0.15, duration: 0.5, ease: "easeOut" } }) };
 
   return (
-    <div style={{ backgroundColor: "#151515" }} className="min-h-screen text-white p-5 gap-6">
+    <div style={{ backgroundColor: "#151515" }} className="min-h-screen text-white p-5 space-y-4">
       <Header />
 
       {/* Title */}
@@ -27,7 +27,7 @@ export default function Clenzi() {
   animate="visible"
   custom={0}
   variants={sectionFade}
-  className="flex flex-col md:flex-row md:justify-between items-center bg-black my-3 p-4 md:p-8 rounded-xl shadow-lg"
+  className="flex flex-col md:flex-row md:justify-between items-center bg-black my-3 p-4 md:p-8 rounded-xl md:rounded-2xl md:rounded-2xl shadow-lg"
 >
   <h2 className="text-4xl font-bold text-white mb-2 md:mb-0">Clenzi</h2>
   <p className="text-base md:text-3xl text-white text-center md:text-right font-semibold">
@@ -57,7 +57,7 @@ export default function Clenzi() {
             key={i}
             variants={sectionFade}
             custom={i}
-            className="flex justify-center items-center p-4 md:p-8 rounded-xl shadow-xl text-lg md:text-3xl font-semibold"
+            className="flex justify-center items-center p-4 md:p-8 rounded-xl md:rounded-2xl md:rounded-2xl shadow-xl text-lg md:text-3xl font-semibold"
             style={{ backgroundColor: item.bg }}
           >
             {item.label}
@@ -73,7 +73,7 @@ export default function Clenzi() {
           muted
           loop
           playsInline
-          className="w-full h-auto rounded-xl shadow-lg object-cover mt-2"
+          className="w-full h-auto rounded-xl md:rounded-2xl md:rounded-2xl shadow-lg object-cover mt-2"
         />
       </motion.div>
 
@@ -82,7 +82,7 @@ export default function Clenzi() {
         initial={{ scale: 0.95, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="flex justify-center items-center bg-black mt-6 p-8 rounded-xl shadow-lg text-base md:text-xl font-bold"
+        className="flex justify-center items-center bg-black mt-6 p-8 rounded-xl md:rounded-2xl md:rounded-2xl shadow-lg text-base md:text-xl font-bold"
       >
         <span>
           Sustainability never looked this <span className="text-[#EE3464]">cute</span>
@@ -90,8 +90,8 @@ export default function Clenzi() {
       </motion.div>
 
       {/* Elements Image */}
-      <motion.div initial="hidden" animate="visible" custom={0.3} variants={sectionFade} className="flex justify-center items-center bg-black mt-4 p-8 rounded-xl shadow-lg">
-        <img src={Clenzielements} alt="Clenzi Project" className="rounded-xl shadow-lg max-w-full" />
+      <motion.div initial="hidden" animate="visible" custom={0.3} variants={sectionFade} className="flex justify-center items-center bg-[#FFFFFF] mt-4 p-8 rounded-xl md:rounded-2xl  ">
+        <img src={Clenzielements} alt="Clenzi Project" className="rounded-xl md:rounded-2xl md:rounded-2xl  max-w-full" />
       </motion.div>
 
       {/* Subtitles */}
@@ -100,12 +100,12 @@ export default function Clenzi() {
         animate="visible"
         custom={0.4}
         variants={sectionFade}
-        className="flex flex-col md:flex-row gap-4 mt-4"
+        className="flex flex-col  gap-3 mt-4"
       >
-        <div className="flex-grow flex justify-center items-center bg-black px-3 py-4 md:p-6 rounded-xl shadow-lg text-3xl font-bold text-center">
+        <div className="flex-grow flex justify-center items-center bg-black px-3 py-4 md:p-6 rounded-xl md:rounded-2xl md:rounded-2xl shadow-lg text-3xl font-bold text-center">
     <span>Use of clean & targeted color schemes</span>
 </div>
-        <div className="flex-grow flex justify-center text-center items-center bg-black p-6 rounded-xl shadow-lg text-xl font-bold">
+        <div className="flex-grow flex justify-center text-center items-center bg-black p-6 rounded-xl md:rounded-2xl md:rounded-2xl shadow-lg text-xl font-bold">
           <span>Packaging for <span className="text-[#EE3464]">3</span>  different sectors</span>
         </div>
       </motion.div>
@@ -131,7 +131,7 @@ export default function Clenzi() {
         muted
         loop
         playsInline
-        className="w-full h-auto rounded-xl shadow-lg object-cover"
+        className="w-full h-auto rounded-xl md:rounded-2xl md:rounded-2xl shadow-lg object-cover"
         whileHover={{ scale: 1.03 }}
         transition={{ type: "spring", stiffness: 200 }}
       />
@@ -139,7 +139,7 @@ export default function Clenzi() {
       <motion.div
         variants={sectionFade}
         custom={i}
-        className="flex justify-center items-center p-4 mt-2 rounded-xl shadow-lg text-lg font-semibold text-center"
+        className="flex justify-center items-center p-4 mt-2 rounded-xl md:rounded-2xl md:rounded-2xl shadow-lg text-lg font-semibold text-center"
         style={{ 
           backgroundColor: "white", 
           color: [
@@ -164,7 +164,7 @@ export default function Clenzi() {
         initial={{ scale: 0.9, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className="flex justify-center items-center bg-black mt-6 p-8 rounded-xl shadow-lg text-3xl font-bold"
+        className="flex justify-center items-center bg-black mt-6 p-8 rounded-xl md:rounded-2xl md:rounded-2xl shadow-lg text-3xl font-bold"
       >
         <span>30% chance of disposable awareness</span>
       </motion.div>
@@ -182,7 +182,7 @@ export default function Clenzi() {
         <img
           src={Frame2059}
           alt="Clenzi Project Insights"
-          className="w-full h-auto rounded-xl shadow-lg"
+          className="w-full h-auto  shadow-lg"
         />
       </motion.div>
 
@@ -190,7 +190,7 @@ export default function Clenzi() {
         initial={{ scale: 0.95, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="flex justify-center items-center bg-black mt-6 p-8 rounded-xl shadow-lg text-xl font-bold"
+        className="flex justify-center items-center bg-black mt-6 p-8 rounded-xl md:rounded-2xl md:rounded-2xl shadow-lg text-xl font-bold"
       >
         <span>Small habits. Big impact.</span>
       </motion.div>

@@ -15,7 +15,7 @@ export default function BottomHeading({ title, subtitle , subtitle2, redirectUrl
     
   }
   return (
-    <div className="flex justify-between items-center  bg-black my-3  p-8 rounded-lg shadow-lg cursor-pointer" onClick={handleClick}>
+    <div className="flex justify-between items-center  bg-black my-3  p-8 rounded-xl md:rounded-2xl shadow-lg cursor-pointer" onClick={handleClick}>
         <div>
             <h2 className="text-xl md:text-4xl font-bold text-white">{title}</h2>
             {subtitle2 && <p className="text-[10px] md:text-lg text-gray-400">{subtitle2}</p>}

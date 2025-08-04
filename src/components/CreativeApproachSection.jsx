@@ -13,7 +13,7 @@ const rowVariants = {
 
 export default function CreativeApproachSection() {
   return (
-    <section className="bg-[#FFE600] text-[#FF00C7] w-full rounded-xl overflow-hidden relative">
+    <section className="bg-[#FFE600] text-[#FF00C7] w-full rounded-xl md:rounded-2xl overflow-hidden relative">
       <div className="flex flex-col md:flex-row">
         {/* Main Content */}
         <div className="flex-1 flex flex-col divide-y divide-[#FF00C7]/40 px-4 md:px-6 lg:px-10 py-6 space-y-6">

@@ -27,7 +27,7 @@ export default function Duggu() {
       className="min-h-screen text-white p-5 space-y-3"
     >
       <Header />
-      <div className="flex flex-col md:flex-row md:justify-between items-center bg-black my-3 p-4 md:p-8 rounded-xl shadow-lg">
+      <div className="flex flex-col md:flex-row md:justify-between items-center bg-black my-3 p-4 md:p-8 rounded-xl md:rounded-2xl shadow-lg">
         <h2 className="text-4xl font-bold text-white mb-2 md:mb-0">Duggu</h2>
         <p className="text-base md:text-3xl text-white text-center md:text-right font-semibold">
           An <span className="text-[#611AA1]">AI Story Telling device</span>
@@ -41,38 +41,38 @@ export default function Duggu() {
       <img
         src={Frame1}
         alt="Duggu Project Colors"
-        className="w-full h-auto mt-5 rounded-xl shadow-lg"
+        className="w-full h-auto mt-5 rounded-xl md:rounded-2xl shadow-lg"
       />
-      <div className="flex justify-center items-center bg-[#611AA1] my-2 p-8 rounded-xl shadow-lg text-xl font-bold">
+      <div className="flex justify-center items-center bg-[#611AA1] my-2 p-8 rounded-xl md:rounded-2xl shadow-lg text-xl font-bold">
         <span>An AI Storytelling Companion</span>
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 mt-5">
-        <div className="flex justify-center items-center bg-black p-4 md:p-8  rounded-xl shadow-lg text-base md:text-lg font-semibold">
+        <div className="flex justify-center items-center bg-black p-4 md:p-8  rounded-xl md:rounded-2xl shadow-lg text-base md:text-lg font-semibold">
           Friend
         </div>
-        <div className="flex justify-center items-center bg-black p-4 md:p-8  rounded-xl shadow-lg text-base md:text-lg font-semibold">
+        <div className="flex justify-center items-center bg-black p-4 md:p-8  rounded-xl md:rounded-2xl shadow-lg text-base md:text-lg font-semibold">
           Storyteller
         </div>
-        <div className="flex justify-center items-center bg-black p-4 md:p-8  rounded-xl shadow-lg text-base md:text-lg font-semibold">
+        <div className="flex justify-center items-center bg-black p-4 md:p-8  rounded-xl md:rounded-2xl shadow-lg text-base md:text-lg font-semibold">
           Creator
         </div>
-        <div className="flex justify-center items-center bg-black p-4 md:p-8  rounded-xl shadow-lg text-base md:text-lg font-semibold">
+        <div className="flex justify-center items-center bg-black p-4 md:p-8  rounded-xl md:rounded-2xl shadow-lg text-base md:text-lg font-semibold">
           Explorer
         </div>
       </div>
 
-      <div className="flex justify-center items-center bg-[#611AA1] my-2 p-8 rounded-xl shadow-lg text-xl font-bold">
+      <div className="flex justify-center items-center bg-[#611AA1] my-2 p-8 rounded-xl md:rounded-2xl shadow-lg text-xl font-bold">
         <span>Meet Duggu</span>
       </div>
 
-      <div className="flex flex-col md:flex-row items-center p-6 bg-black rounded-xl min-h-[80vh]">
+      <div className="flex flex-col md:flex-row items-center p-6 bg-black rounded-xl md:rounded-2xl min-h-[80vh]">
         {/* Left - Frame1892 */}
         <div className="flex-[1] flex justify-start items-start">
           <img
             src={Frame1892}
             alt="Duggu Project"
-            className="w-full h-auto max-h-[80vh] rounded-xl object-contain"
+            className="w-full h-auto max-h-[80vh] rounded-xl md:rounded-2xl object-contain"
           />
         </div>
 
@@ -81,7 +81,7 @@ export default function Duggu() {
           <img
             src={DugguFace}
             alt="Duggu Face"
-            className="w-[40vw] max-h-[75vh] object-contain rounded-xl"
+            className="w-[40vw] max-h-[75vh] object-contain rounded-xl md:rounded-2xl"
           />
         </div>
 
@@ -89,7 +89,7 @@ export default function Duggu() {
         <div className="flex-[1]" />
       </div>
 
-      <div className="flex justify-center items-center  my-2 p-8 rounded-xl shadow-lg text-xl font-bold bg-black">
+      <div className="flex justify-center items-center  my-2 p-8 rounded-xl md:rounded-2xl shadow-lg text-xl font-bold bg-black">
         <img src={DUGGU} alt="Duggu Logo" className=" h-auto" />
       </div>
 
@@ -129,26 +129,26 @@ export default function Duggu() {
           muted
           loop
           playsInline
-          className="w-full h-auto rounded-xl shadow-lg object-cover my-2"
+          className="w-full h-auto rounded-xl md:rounded-2xl shadow-lg object-cover my-2"
         />
       </div>
 
-      <span className="block p-5 text-center rounded-xl bg-black text-white text-4xl font-bold w-full">
+      <span className="block p-5 text-center rounded-xl md:rounded-2xl bg-black text-white text-4xl font-bold w-full">
         Increased user engagement by 82.4%
       </span>
 
-      <span className="block p-5 text-center rounded-xl bg-black text-white text-xl font-bold w-full">
+      <span className="block p-5 text-center rounded-xl md:rounded-2xl bg-black text-white text-xl font-bold w-full">
         Helping 3 major deficits
       </span>
 
       <div className="grid grid-cols-3 gap-4 mt-5">
-        <div className="flex justify-center items-center bg-black p-3 md:p-8 rounded-xl shadow-lg text-lg font-semibold">
+        <div className="flex justify-center items-center bg-black p-3 md:p-8 rounded-xl md:rounded-2xl shadow-lg text-lg font-semibold">
           Time
         </div>
-        <div className="flex justify-center items-center bg-black  p-3 md:p-8 rounded-xl shadow-lg text-lg font-semibold">
+        <div className="flex justify-center items-center bg-black  p-3 md:p-8 rounded-xl md:rounded-2xl shadow-lg text-lg font-semibold">
           Regional
         </div>
-        <div className="flex justify-center items-center bg-black p-3 md:p-8 rounded-xl shadow-lg text-lg font-semibold text-center">
+        <div className="flex justify-center items-center bg-black p-3 md:p-8 rounded-xl md:rounded-2xl shadow-lg text-lg font-semibold text-center">
     Sleep Solution
 </div>
       </div>
@@ -160,31 +160,31 @@ export default function Duggu() {
           muted
           loop
           playsInline
-          className="w-full h-auto rounded-xl shadow-lg object-cover mt-2"
+          className="w-full h-auto rounded-xl md:rounded-2xl shadow-lg object-cover mt-2"
         />
       </div>
 
       <div className="grid grid-cols-2 gap-4 mt-5">
-        <div className="flex justify-center items-center bg-[#611AA1] p-8 rounded-xl shadow-lg text-lg font-semibold">
+        <div className="flex justify-center items-center bg-[#611AA1] p-8 rounded-xl md:rounded-2xl shadow-lg text-lg font-semibold">
           No Gender
         </div>
-        <div className="flex justify-center items-center bg-[#611AA1]  p-8 rounded-xl shadow-lg text-lg font-semibold">
+        <div className="flex justify-center items-center bg-[#611AA1]  p-8 rounded-xl md:rounded-2xl shadow-lg text-lg font-semibold">
           Many Colours
         </div>
       </div>
 
-      <span className="block p-5 text-center rounded-xl bg-black text-white text-4xl font-bold w-full my-3">
+      <span className="block p-5 text-center rounded-xl md:rounded-2xl bg-black text-white text-4xl font-bold w-full my-3">
         150% increase in genre exploration
       </span>
 
-      <div className="hidden md:relative w-full h-screen bg-black rounded-xl overflow-hidden p-4">
+      <div className="hidden md:relative w-full h-screen bg-black rounded-xl md:rounded-2xl overflow-hidden p-4">
         {/* Top Right: Image with text BELOW */}
         <div className="absolute top-4 right-4 text-right flex flex-col items-end">
           <div className="h-[50vh] w-auto flex items-center justify-center">
             <img
               src={Dugguambience}
               alt="Top Right"
-              className=" w-auto rounded-xl shadow-lg object-contain"
+              className=" w-auto rounded-xl md:rounded-2xl shadow-lg object-contain"
             />
           </div>
           <img
@@ -205,24 +205,24 @@ export default function Duggu() {
             <img
               src={duggufinal1}
               alt="Bottom Left"
-              className=" w-auto rounded-xl shadow-lg object-contain"
+              className=" w-auto rounded-xl md:rounded-2xl shadow-lg object-contain"
             />
           </div>
         </div>
       </div>
 
-      <img src={MobileImage} alt="Duggu Mobile Mockup" className="w-full h-auto mt-5 rounded-xl shadow-lg" />
+      <img src={MobileImage} alt="Duggu Mobile Mockup" className="w-full h-auto mt-5 rounded-xl md:rounded-2xl shadow-lg" />
 
       <img
         src={allfourcolors}
         alt="Duggu Project Colors"
-        className="w-full h-auto mt-5 rounded-xl shadow-lg"
+        className="w-full h-auto mt-5 rounded-xl md:rounded-2xl shadow-lg"
       />
 
       <img
         src={Dugguframe2}
         alt="Duggu Project Colors"
-        className="w-full h-auto mt-5 rounded-xl shadow-lg"
+        className="w-full h-auto mt-5 rounded-xl md:rounded-2xl shadow-lg"
       />
 
       <div className="flex justify-center items-center bg-black my-4 p-8 rounded-3xl shadow-lg text-xl font-bold">

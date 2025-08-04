@@ -263,7 +263,7 @@ const HeroSection = () => {
   return (
     <div className="w-full text-yellow-400 font-sans">
       {/* Header */}
-      <div className="w-full text-center py-2 bg-pink-600 text-white text-sm md:text-xl font-normal rounded-xl mx-auto font-clash">
+      <div className="w-full text-center py-2 bg-pink-600 text-white text-sm md:text-xl font-normal rounded-xl md:rounded-2xl mx-auto font-clash">
         WHAT TO EXPECT
       </div>
 
@@ -287,7 +287,7 @@ const HeroSection = () => {
       </div>
 
       {/* Content Area with Carousel */}
-      <div className="relative bg-pink-600 rounded-xl py-8 md:py-10 mx-auto text-yellow-400 font-bold overflow-hidden">
+      <div className="relative bg-pink-600 rounded-xl md:rounded-2xl py-8 md:py-10 mx-auto text-yellow-400 font-bold overflow-hidden">
         <div className="relative h-[8rem] md:h-[14rem]">
           <AnimatePresence mode="wait" custom={1}>
             {/* Team Play Content */}

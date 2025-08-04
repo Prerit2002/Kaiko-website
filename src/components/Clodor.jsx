@@ -46,7 +46,7 @@ export default function Clodor() {
                     muted
                     loop
                     playsInline
-                    className="w-full h-auto rounded-xl shadow-lg object-cover mt-2"
+                    className="w-full h-auto rounded-xl md:rounded-2xl shadow-lg object-cover mt-2"
                 />
             </div>
             <BottomHeading

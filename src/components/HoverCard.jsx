@@ -92,7 +92,7 @@ const HoverCard = ({
 
       {/* Main Card */}
       <motion.div
-        className="relative w-full h-full rounded-xl overflow-hidden bg-cover bg-center flex flex-row items-center justify-between px-6 z-30"
+        className="relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-cover bg-center flex flex-row items-center justify-between px-6 z-30"
         style={{
           backgroundImage:
             effectiveHover && !comingSoon

@@ -15,7 +15,7 @@ const ServicesSection = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
-        className="bg-black text-center  w-full rounded-xl p-4 sm:p-6"
+        className="bg-black text-center  w-full rounded-xl md:rounded-2xl p-4 sm:p-6"
       >
         <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold leading-tight">
           GO TO OUR SERVICES
@@ -24,7 +24,7 @@ const ServicesSection = () => {
       </motion.div>
 
       {/* Card with background image and overlay content */}
-      <div className="relative w-full rounded-xl  overflow-hidden  md:h-[100vh]">
+      <div className="relative w-full rounded-xl md:rounded-2xl  overflow-hidden  md:h-[100vh]">
         {/* Background Image */}
         <img 
           src={Services} 
