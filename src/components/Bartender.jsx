@@ -6,6 +6,7 @@ import Frame2054 from "../assets/Bartender/Frame2054.png";
 import Frame2059 from "../assets/Bartender/Frame2059.png";
 import Frame2143 from "../assets/Bartender/Frame2143.png";
 import Vertical1 from "../assets/Bartender/vertical1.png";
+import Frame2060 from "../assets/Bartender/Frame2060.png";
 import clenziLogo from "../assets/Bartender/clenziLogo.png";
 
 export default function Bartender() {
@@ -29,7 +30,7 @@ export default function Bartender() {
             <div className="flex justify-center items-center text-center bg-black mt-2 p-8 rounded-lg shadow-lg text-xl font-bold">
                 <span> Capturing the <span className="text-[#B7AA9F]">essence</span> of every drink</span>
             </div>
-            <img src={Frame2059} alt="Bartender Project Colors" className="w-full h-auto mt-5 rounded-lg shadow-lg" />
+            <img src={Frame2060} alt="Bartender Project Colors" className="w-full h-auto mt-5 rounded-lg shadow-lg" />
             <img src={Frame2143} alt="Bartender Project Colors" className="w-full h-auto mt-5 rounded-lg shadow-lg" />
             <div className="flex justify-center items-center bg-black mt-2 p-8 rounded-lg shadow-lg text-xl font-bold">
                 <span> A <span className="text-[#B7AA9F]">Keepsake </span> for every night</span>

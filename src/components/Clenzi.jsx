@@ -50,14 +50,14 @@ export default function Clenzi() {
       >
         {[
           { label: "SAFE", bg: "#EE3464" },
-          { label: "Discreet", bg: "#2A81BC" },
+          { label: "DISCREET", bg: "#2A81BC" },
           { label: "CONSCIOUS", bg: "#FEC914" },
         ].map((item, i) => (
           <motion.div
             key={i}
             variants={sectionFade}
             custom={i}
-            className="flex justify-center items-center p-4 md:p-8 rounded-xl md:rounded-2xl md:rounded-2xl shadow-xl text-lg md:text-3xl font-semibold"
+            className="flex justify-center items-center p-4 md:p-8 rounded-xl md:rounded-2xl md:rounded-2xl shadow-xl text-xl md:text-3xl font-semibold"
             style={{ backgroundColor: item.bg }}
           >
             {item.label}
