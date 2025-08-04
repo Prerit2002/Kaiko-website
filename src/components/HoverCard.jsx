@@ -29,7 +29,16 @@ const HoverCard = ({
   const handleClick = () => {
     if (!comingSoon && redirectUrl) {
       navigate(redirectUrl);
-      window.scrollTo(0, 0);
+      // window.scrollTo(0, 0);
+      setTimeout(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'instant'
+    });
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+  }, 50);
     }
   };
 
@@ -83,7 +92,7 @@ const HoverCard = ({
 
       {/* Main Card */}
       <motion.div
-        className="relative w-full h-full rounded-2xl overflow-hidden bg-cover bg-center flex flex-row items-center justify-between px-6 z-30"
+        className="relative w-full h-full rounded-xl overflow-hidden bg-cover bg-center flex flex-row items-center justify-between px-6 z-30"
         style={{
           backgroundImage:
             effectiveHover && !comingSoon

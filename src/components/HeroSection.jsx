@@ -263,7 +263,7 @@ const HeroSection = () => {
   return (
     <div className="w-full text-yellow-400 font-sans">
       {/* Header */}
-      <div className="w-full text-center py-2 bg-pink-600 text-white text-sm md:text-xl font-normal rounded-md mx-auto font-clash">
+      <div className="w-full text-center py-2 bg-pink-600 text-white text-sm md:text-xl font-normal rounded-xl mx-auto font-clash">
         WHAT TO EXPECT
       </div>
 

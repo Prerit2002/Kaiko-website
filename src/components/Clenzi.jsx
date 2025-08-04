@@ -27,7 +27,7 @@ export default function Clenzi() {
   animate="visible"
   custom={0}
   variants={sectionFade}
-  className="flex flex-col md:flex-row md:justify-between items-center bg-black my-3 p-4 md:p-8 rounded-lg shadow-lg"
+  className="flex flex-col md:flex-row md:justify-between items-center bg-black my-3 p-4 md:p-8 rounded-xl shadow-lg"
 >
   <h2 className="text-4xl font-bold text-white mb-2 md:mb-0">Clenzi</h2>
   <p className="text-base md:text-3xl text-white text-center md:text-right font-semibold">
@@ -39,7 +39,7 @@ export default function Clenzi() {
       <motion.div
         initial="hidden"
         animate="visible"
-        className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-5"
+        className="grid grid-cols-3 gap-1 md:gap-4 mt-5"
         variants={{
           visible: {
             transition: {
@@ -57,7 +57,7 @@ export default function Clenzi() {
             key={i}
             variants={sectionFade}
             custom={i}
-            className="flex justify-center items-center p-8 rounded-lg shadow-xl text-3xl font-semibold"
+            className="flex justify-center items-center p-4 md:p-8 rounded-xl shadow-xl text-lg md:text-3xl font-semibold"
             style={{ backgroundColor: item.bg }}
           >
             {item.label}
@@ -82,7 +82,7 @@ export default function Clenzi() {
         initial={{ scale: 0.95, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="flex justify-center items-center bg-black mt-6 p-8 rounded-lg shadow-lg text-base md:text-xl font-bold"
+        className="flex justify-center items-center bg-black mt-6 p-8 rounded-xl shadow-lg text-base md:text-xl font-bold"
       >
         <span>
           Sustainability never looked this <span className="text-[#EE3464]">cute</span>
@@ -90,8 +90,8 @@ export default function Clenzi() {
       </motion.div>
 
       {/* Elements Image */}
-      <motion.div initial="hidden" animate="visible" custom={0.3} variants={sectionFade} className="flex justify-center items-center bg-black mt-4 p-8 rounded-lg shadow-lg">
-        <img src={Clenzielements} alt="Clenzi Project" className="rounded-lg shadow-lg max-w-full" />
+      <motion.div initial="hidden" animate="visible" custom={0.3} variants={sectionFade} className="flex justify-center items-center bg-black mt-4 p-8 rounded-xl shadow-lg">
+        <img src={Clenzielements} alt="Clenzi Project" className="rounded-xl shadow-lg max-w-full" />
       </motion.div>
 
       {/* Subtitles */}
@@ -102,68 +102,69 @@ export default function Clenzi() {
         variants={sectionFade}
         className="flex flex-col md:flex-row gap-4 mt-4"
       >
-        <div className="flex-grow flex justify-center items-center bg-black p-6 rounded-lg shadow-lg text-xl font-bold">
-          <span>Use of clean & targeted color schemes</span>
-        </div>
-        <div className="flex-grow flex justify-center items-center bg-black p-6 rounded-lg shadow-lg text-xl font-bold">
-          <span>Packaging for 3 different sectors</span>
+        <div className="flex-grow flex justify-center items-center bg-black px-3 py-4 md:p-6 rounded-xl shadow-lg text-3xl font-bold text-center">
+    <span>Use of clean & targeted color schemes</span>
+</div>
+        <div className="flex-grow flex justify-center text-center items-center bg-black p-6 rounded-xl shadow-lg text-xl font-bold">
+          <span>Packaging for <span className="text-[#EE3464]">3</span>  different sectors</span>
         </div>
       </motion.div>
 
       {/* Video Grid */}
       <motion.div
-        initial="hidden"
-        animate="visible"
-        className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-5 w-full"
-        variants={{
-          visible: {
-            transition: {
-              staggerChildren: 0.1,
-            },
-          },
+  initial="hidden"
+  animate="visible"
+  className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-5 w-full"
+  variants={{
+    visible: {
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  }}
+>
+  {[WomenPink, AdultsBlue, KidsYellow].map((src, i) => (
+    <motion.div key={i} variants={sectionFade} custom={i}>
+      <motion.video
+        src={src}
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="w-full h-auto rounded-xl shadow-lg object-cover"
+        whileHover={{ scale: 1.03 }}
+        transition={{ type: "spring", stiffness: 200 }}
+      />
+      {/* Text tile directly below each video */}
+      <motion.div
+        variants={sectionFade}
+        custom={i}
+        className="flex justify-center items-center p-4 mt-2 rounded-xl shadow-lg text-lg font-semibold text-center"
+        style={{ 
+          backgroundColor: "white", 
+          color: [
+            { label: "Women", color: "#EE3464" },
+            { label: "Seniors", color: "#2A81BC" },
+            { label: "Children", color: "#FFC831" },
+          ][i].color 
         }}
       >
-        {[WomenPink, AdultsBlue, KidsYellow].map((src, i) => (
-          <motion.div key={i} variants={sectionFade} custom={i}>
-            <motion.video
-              src={src}
-              autoPlay
-              muted
-              loop
-              playsInline
-              className="w-full h-auto rounded-lg shadow-lg object-cover"
-              whileHover={{ scale: 1.03 }}
-              transition={{ type: "spring", stiffness: 200 }}
-            />
-          </motion.div>
-        ))}
-      </motion.div>
-
-      {/* Audience Tiles */}
-      <motion.div initial="hidden" animate="visible" className="grid grid-cols-3 gap-4 mt-5">
         {[
           { label: "Women", color: "#EE3464" },
           { label: "Seniors", color: "#2A81BC" },
           { label: "Children", color: "#FFC831" },
-        ].map((item, i) => (
-          <motion.div
-            key={i}
-            variants={sectionFade}
-            custom={i}
-            className="flex justify-center items-center p-8 rounded-lg shadow-lg text-lg font-semibold"
-            style={{ backgroundColor: "white", color: item.color }}
-          >
-            {item.label}
-          </motion.div>
-        ))}
+        ][i].label}
       </motion.div>
+    </motion.div>
+  ))}
+</motion.div>
 
       {/* Metric */}
       <motion.div
         initial={{ scale: 0.9, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className="flex justify-center items-center bg-black mt-6 p-8 rounded-lg shadow-lg text-3xl font-bold"
+        className="flex justify-center items-center bg-black mt-6 p-8 rounded-xl shadow-lg text-3xl font-bold"
       >
         <span>30% chance of disposable awareness</span>
       </motion.div>
@@ -181,7 +182,7 @@ export default function Clenzi() {
         <img
           src={Frame2059}
           alt="Clenzi Project Insights"
-          className="w-full h-auto rounded-lg shadow-lg"
+          className="w-full h-auto rounded-xl shadow-lg"
         />
       </motion.div>
 
@@ -189,7 +190,7 @@ export default function Clenzi() {
         initial={{ scale: 0.95, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="flex justify-center items-center bg-black mt-6 p-8 rounded-lg shadow-lg text-xl font-bold"
+        className="flex justify-center items-center bg-black mt-6 p-8 rounded-xl shadow-lg text-xl font-bold"
       >
         <span>Small habits. Big impact.</span>
       </motion.div>

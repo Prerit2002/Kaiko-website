@@ -47,7 +47,7 @@ function HomePage() {
 
 function App() {
   return (
-    <Router>
+    <Router style={{ backgroundColor: '#151515' }}>
       <SplashScreen imageSrc={Logo2} duration={2} />
       <Routes>
         <Route path="/" element={<HomePage />} />

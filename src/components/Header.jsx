@@ -43,7 +43,7 @@ export default function Header() {
         {/* Logo */}
         <div className="flex flex-col md:flex-row md:items-center md:gap-6 text-left">
           <Link to="/">
-            <img src={Logo} alt="Kaiko Studios Logo" className="h-15 w-auto" />
+            <img src={Logo} alt="Kaiko Studios Logo" className="h-10 md:h-20 w-auto" />
           </Link>
         </div>
 

@@ -8,14 +8,14 @@ import FooterMobile from "../assets/FooterMobile.png";
 
 const ServicesSection = () => {
   return (
-    <section id="contact" className="text-white flex flex-col items-center rounded-xl w-full space-y-3">
+    <section id="contact" className="text-white flex flex-col items-center rounded-lg w-full space-y-3">
       {/* Title */}
       <motion.div
         initial={{ opacity: 0, y: 12 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
-        className="bg-black text-center  w-full rounded-2xl sm:rounded-3xl p-4 sm:p-6"
+        className="bg-black text-center  w-full rounded-xl p-4 sm:p-6"
       >
         <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold leading-tight">
           GO TO OUR SERVICES
@@ -24,7 +24,7 @@ const ServicesSection = () => {
       </motion.div>
 
       {/* Card with background image and overlay content */}
-      <div className="relative w-full rounded-2xl sm:rounded-3xl overflow-hidden  md:h-[100vh]">
+      <div className="relative w-full rounded-xl  overflow-hidden  md:h-[100vh]">
         {/* Background Image */}
         <img 
           src={Services} 
