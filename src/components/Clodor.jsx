@@ -12,7 +12,7 @@ import ClodorVideo from "../assets/Clodor/videos/clodor.mp4";
 
 export default function Clodor() {
     return (
-        <div style={{ backgroundColor: "#151515" }} className="min-h-screen text-white p-5 gap-3">
+        <div style={{ backgroundColor: "#151515" }} className="min-h-screen text-white p-5 space-y-3">
             <Header />
             <div className="flex flex-col md:flex-row md:justify-between items-center bg-black my-3 p-4 md:p-8 rounded-lg shadow-lg">
   <h2 className="text-4xl font-bold text-white mb-2 md:mb-0">Clodor</h2>
