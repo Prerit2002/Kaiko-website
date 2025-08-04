@@ -10,19 +10,25 @@ const HoverCard = ({
   comingSoon = false,
   redirectUrl,
   imgLogo,
+  txtColor = "#FFFFFF",
 }) => {
   const [hovered, setHovered] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const navigate = useNavigate();
+  console.log(txtColor);
 
   // Detect mobile (< md)
   useEffect(() => {
     const mq = window.matchMedia("(max-width: 767px)");
     const update = () => setIsMobile(mq.matches);
     update();
-    mq.addEventListener ? mq.addEventListener("change", update) : mq.addListener(update);
+    mq.addEventListener
+      ? mq.addEventListener("change", update)
+      : mq.addListener(update);
     return () => {
-      mq.removeEventListener ? mq.removeEventListener("change", update) : mq.removeListener(update);
+      mq.removeEventListener
+        ? mq.removeEventListener("change", update)
+        : mq.removeListener(update);
     };
   }, []);
 
@@ -31,14 +37,14 @@ const HoverCard = ({
       navigate(redirectUrl);
       // window.scrollTo(0, 0);
       setTimeout(() => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: 'instant'
-    });
-    document.documentElement.scrollTop = 0;
-    document.body.scrollTop = 0;
-  }, 50);
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "instant",
+        });
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+      }, 50);
     }
   };
 
@@ -67,7 +73,7 @@ const HoverCard = ({
           return (
             <motion.div
               key={index}
-              className="absolute h-[40px] mx-auto rounded-2xl overflow-hidden bg-center text-white pointer-events-none shadow-xl"
+              className="absolute h-[40px] mx-auto rounded-2xl overflow-hidden bg-center  pointer-events-none shadow-xl"
               style={{
                 top: `-${offsetY}px`,
                 width: `${widthPercent}%`,
@@ -96,9 +102,7 @@ const HoverCard = ({
         className="relative w-full h-full rounded-xl md:rounded-2xl overflow-hidden bg-cover bg-center flex flex-row items-center justify-between px-6 z-30"
         style={{
           backgroundImage:
-            effectiveHover && !comingSoon
-              ? `url(${cardImages?.[0]})`
-              : "none",
+            effectiveHover && !comingSoon ? `url(${cardImages?.[0]})` : "none",
           backgroundColor: comingSoon
             ? "rgba(255, 255, 255, 0.1)"
             : effectiveHover
@@ -118,27 +122,27 @@ const HoverCard = ({
           <>
             <div className="flex flex-col md:flex-row md:justify-between w-full md:items-center">
               <div
-                className={`text-2xl font-bold ${
-                  comingSoon ? "text-black" : "text-white"
-                }`}
-              >
+  className="text-3xl md:text-5xl font-bold"
+  style={{ color: comingSoon ? 'black' : txtColor }}
+>
                 {title}
               </div>
 
               {/* Subtitle */}
               <div
-                className={`text-sm font-medium ${
-                  comingSoon ? "text-black" : "text-white"
-                }`}
-              >
+ className="text-sm font-medium"
+ style={{ color: comingSoon ? 'black' : txtColor }}
+>
                 {comingSoon ? "TO BE RELEASED" : subtitle}
               </div>
             </div>
-             
-             { !comingSoon && imgLogo && (
-                <img className="block md:hidden w-16 h-16 object-contain" src={imgLogo} />
-             )}
-            
+
+            {!comingSoon && imgLogo && (
+              <img
+                className="block md:hidden w-16 h-16 object-contain"
+                src={imgLogo}
+              />
+            )}
           </>
         )}
       </motion.div>
