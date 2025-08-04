@@ -30,8 +30,8 @@ export default function Clenzi() {
   variants={sectionFade}
   className="flex flex-col md:flex-row md:justify-between items-center bg-black my-3 p-4 md:p-8 rounded-xl md:rounded-2xl md:rounded-2xl shadow-lg"
 >
-  <h2 className="text-4xl font-bold text-white mb-2 md:mb-0">Clenzi</h2>
-  <p className="text-base md:text-3xl text-white text-center md:text-right font-semibold">
+  <h2 className="text-5xl font-bold text-white mb-2 md:mb-0">Clenzi</h2>
+  <p className="text-base md:text-2xl text-white text-center md:text-right font-semibold">
     Packaging for <span className="text-[#EE3464]">Sustainable</span> Disposables
   </p>
 </motion.div>

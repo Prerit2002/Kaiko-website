@@ -15,8 +15,8 @@ export default function Clodor() {
         <div style={{ backgroundColor: "#151515" }} className="min-h-screen text-white p-5 space-y-3">
             <Header />
             <div className="flex flex-col md:flex-row md:justify-between items-center bg-black my-3 p-4 md:p-8 rounded-lg shadow-lg">
-  <h2 className="text-4xl font-bold text-white mb-2 md:mb-0">Clodor</h2>
-  <p className="text-base md:text-3xl text-white text-center md:text-right font-semibold">
+  <h2 className="text-5xl font-bold text-white mb-2 md:mb-0">Clodor</h2>
+  <p className="text-base md:text-2xl text-white text-center md:text-right font-semibold">
     An <span className="text-[#F9D8C9]">E-Commerce Website</span>
     <span className="hidden md:inline"><br /></span>
     <span className="md:hidden"> </span>

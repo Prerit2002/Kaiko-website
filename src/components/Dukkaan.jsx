@@ -73,8 +73,8 @@ export default function Dukkaan() {
         transition={{ duration: 1 }}
         className="flex flex-col md:flex-row md:justify-between items-center bg-black my-3 p-4 md:p-8 rounded-xl md:rounded-2xl shadow-lg"
       >
-        <h2 className="text-4xl font-bold text-white mb-2 md:mb-0">Dukaan</h2>
-        <p className="text-base md:text-3xl text-white text-center md:text-right font-semibold">
+        <h2 className="text-5xl font-bold text-white mb-2 md:mb-0">Dukaan</h2>
+        <p className="text-base md:text-2xl text-white text-center md:text-right font-semibold">
           A <span className="text-[#F9D8C9]">Healthy</span> Snack Shop
         </p>
       </motion.div>
@@ -175,7 +175,7 @@ export default function Dukkaan() {
       </div>
 
       <div className="flex justify-center items-center bg-black mt-2 p-8 rounded-xl md:rounded-2xl shadow-lg text-xl font-bold">
-        <span>More to Come</span>
+        <span>More to Come!</span>
       </div>
 
       <BottomHeading
