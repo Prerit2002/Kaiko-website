@@ -73,7 +73,7 @@ export default function Dukkaan() {
         transition={{ duration: 1 }}
         className="flex flex-col md:flex-row md:justify-between items-center bg-black my-3 p-4 md:p-8 rounded-xl md:rounded-2xl shadow-lg"
       >
-        <h2 className="text-5xl font-bold text-white mb-2 md:mb-0">Dukaan</h2>
+        <h2 className="text-3xl md:text-5xl font-bold text-white mb-2 md:mb-0">Dukaan</h2>
         <p className="text-base md:text-2xl text-white text-center md:text-right font-semibold">
           A <span className="text-[#F9D8C9]">Healthy</span> Snack Shop
         </p>
@@ -139,13 +139,13 @@ export default function Dukkaan() {
         <span>Colours per product category</span>
       </div>
 
-      <div className="grid grid-cols-3 items-center mt-3 gap-3">
+      <div className="grid grid-cols-3 items-center  gap-3">
         {[butterig1, cheeseig1, truffleig1].map((src, i) => (
           <motion.img
             key={i}
             src={src}
             alt="Dukkaan Product Colors"
-            className="w-full h-auto mt-5 rounded-lg shadow-lg"
+            className="w-full h-auto  rounded-lg shadow-lg"
             whileHover={{ scale: 1.05 }}
           />
         ))}

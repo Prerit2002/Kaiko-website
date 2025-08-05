@@ -14,11 +14,11 @@ const services = [
   },
   {
     title: "MARKETING",
-    items: ["Social Media", "Post, Stories, Reels", "Thumbnails and Covers"],
+    items: ["Social Media", "Post, Stories, Reels", "Thumbnails and Covers", "Content Creation", "SMM Ads" ],
   },
   {
     title: "CONSULTING",
-    items: ["Brand Auditing", "Website Auditing"],
+    items: ["Brand Auditing", "Brand Consulting", "Website Auditing" , "Website Consulting"],
   },
 ];
 

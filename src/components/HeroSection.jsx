@@ -126,95 +126,68 @@ const HeroSection = () => {
   }, []);
 
   // Team Play Content Component
-  const TeamPlayContent = () => (
-    <div className="w-full h-[8rem] md:h-[14rem] flex justify-center px-6 md:px-12 ">
-      <div className="w-full max-w-6xl">
-        {/* First line: "YOU ARE A PART OF" */}
-        <div className="w-full">
-          <h2 className="text-2xl md:text-4xl lg:text-5xl font-extrabold leading-tight">
-            YOU ARE A PART OF
-          </h2>
-        </div>
-
-        {/* Second line: "OUR SQUAD" and "And" */}
-        <div className="w-full flex items-baseline mt-4">
-          <h3 className="text-xl md:text-3xl lg:text-4xl font-bold leading-tight">
-            OUR SQUAD
-          </h3>
-          <div className="flex-1 flex  justify-end md:justify-center">
-            <h3 className="text-xl md:text-3xl lg:text-4xl font-bold leading-tight">
-              AND
-            </h3>
-          </div>
-        </div>
-
-        {/* Third line: "WE," aligned right */}
-        <div className="w-full flex justify-end mt-2 md:mt-6">
-          <h2 className="text-2xl md:text-4xl lg:text-5xl font-extrabold leading-tight">
-            WE,
-          </h2>
-        </div>
-
-        {/* Fourth line: "A PART OF YOUR VISION" aligned right */}
-        <div className="w-full flex justify-end mt-1">
-          <h2 className="text-sm md:text-lg lg:text-2xl font-bold leading-tight">
-            A PART OF YOUR VISION
-          </h2>
+  const GrowthContent = () => (
+    <div className="relative h-[8rem] md:h-[14rem] flex flex-col items-center justify-center px-4 md:px-12 ">
+      <div className=" text-xl md:text-4xl lg:text-5xl w-full">
+        <div>
+          <h1 className="text-yellow-300 font-bold text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl leading-tight tracking-wide">
+            <span className="block text-center md:text-left mb-2 sm:mb-4">
+              EVERY STEP IS A <span className="md:hidden">STEP TOWARD</span>
+            </span>
+            <span className="block text-center md:text-right">
+              <span className="hidden md:block">STEP TOWARD</span> YOUR GOALS
+            </span>
+          </h1>
         </div>
       </div>
     </div>
   );
 
-  const GrowthContent = () => {
+  const TeamPlayContent = () => {
     // Choose pattern based on screen size
-    const currentPattern = isMobile ? vPatternMobile : vPatternDesktop;
+    // const currentPattern = isMobile ? vPatternMobile : vPatternDesktop;
 
     return (
-      <div className="relative w-full h-[8rem] md:h-[14rem] flex justify-center md:py-8 md:py-1 md:px-12">
-        {/* Pattern Container */}
-        <div className="hidden md:block relative w-full max-w-7xl overflow-hidden mx-auto">
-          {currentPattern.map((item, index) => (
-            <motion.span
-              key={index}
-              className="absolute text-lg md:text-4xl"
-              style={{
-                left: item.left,
-                top: item.top,
-                transform: "translateX(-50%)",
-                whiteSpace: "nowrap",
-              }}
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: index * 0.05, duration: 0.3 }}
-            >
-              {item.letter}
-            </motion.span>
-          ))}
-        </div>
-        <div>
-          <motion.img
-            src={StepImg}
-            alt="Step Image"
-            className="absolute md:hidden top-0 left-0 w-full h-full object-contain p-2"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          />
-        </div>
-      </div>
-    );
-  };
-
-  // Vatavaran Content Component
-  const VatavaranContent = () => (
-    <div className="relative h-[8rem] md:h-[14rem] flex flex-col items-center justify-center px-6 md:px-12">
+      // <div className="relative w-full h-[8rem] md:h-[14rem] flex justify-center md:py-8 md:py-1 md:px-12">
+      //   {/* Pattern Container */}
+      //   <div className="hidden md:block relative w-full max-w-7xl overflow-hidden mx-auto">
+      //     {currentPattern.map((item, index) => (
+      //       <motion.span
+      //         key={index}
+      //         className="absolute text-lg md:text-4xl"
+      //         style={{
+      //           left: item.left,
+      //           top: item.top,
+      //           transform: "translateX(-50%)",
+      //           whiteSpace: "nowrap",
+      //         }}
+      //         initial={{ opacity: 0, scale: 0.8 }}
+      //         animate={{ opacity: 1, scale: 1 }}
+      //         transition={{ delay: index * 0.05, duration: 0.3 }}
+      //       >
+      //         {item.letter}
+      //       </motion.span>
+      //     ))}
+      //   </div>
+      //   <div>
+      //     <motion.img
+      //       src={StepImg}
+      //       alt="Step Image"
+      //       className="absolute md:hidden top-0 left-0 w-full h-full object-contain p-2"
+      //       initial={{ opacity: 0 }}
+      //       animate={{ opacity: 1 }}
+      //       transition={{ duration: 0.5, delay: 0.2 }}
+      //     />
+      //   </div>
+      // </div>
+      <div className="relative h-[8rem] md:h-[14rem] flex flex-col items-center justify-center px-6 md:px-12">
       <motion.h1 
-        className="text-2xl md:text-4xl lg:text-5xl font-bold text-center"
+        className="text-xl md:text-4xl lg:text-5xl font-bold text-center"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        vibe check is a must
+        YOU ARE A PART OF OUR SQUAD AND WE,
       </motion.h1>
       <motion.p 
         className="text-lg md:text-xl lg:text-2xl text-center mt-2"
@@ -222,7 +195,30 @@ const HeroSection = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
       >
-        and it goes both ways
+        A PART OF YOUR VISION
+      </motion.p>
+    </div>
+    );
+  };
+
+  // Vatavaran Content Component
+  const VatavaranContent = () => (
+    <div className="relative h-[8rem] md:h-[14rem] flex flex-col items-center justify-center px-6 md:px-12">
+      <motion.h1 
+        className="text-xl md:text-4xl lg:text-5xl font-bold text-center"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
+        VIBE CHECK IS A MUST
+      </motion.h1>
+      <motion.p 
+        className="text-lg md:text-xl lg:text-2xl text-center mt-2"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+      >
+        AND IT GOES BOTH WAYS
       </motion.p>
     </div>
   );

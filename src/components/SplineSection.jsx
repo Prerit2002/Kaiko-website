@@ -6,7 +6,7 @@ import Spline from "../assets/Spline.png"
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full h-[600px] md:h-[700px] overflow-hidden rounded-lg bg-black">
+    <section className="relative w-full h-[590px] md:h-[700px] overflow-hidden rounded-lg bg-black">
       {/* Mobile Background */}
       <motion.img
         src={MainMobile}

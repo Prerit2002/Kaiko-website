@@ -8,11 +8,11 @@ export default function BombayBanner() {
     <img
       src={ShikharUrvi}
       alt="Bombay Illustration"
-      className="w-full h-auto mb-4 rounded-3xl"
+      className="w-full h-auto mb-4 rounded-xl md:rounded-3xl"
     />
   </div>
 
-  <div className="bg-blue-600 text-white text-md uppercase tracking-wider font-semibold px-4 py-2 rounded-full text-center  w-full font-clans">
+  <div className="bg-[#FFD400] text-black text-md uppercase tracking-wider font-semibold px-4 py-2 rounded-xl text-center  w-full font-clans">
     Based in Bombay
   </div>
 </section>

@@ -28,7 +28,7 @@ export default function Duggu() {
     >
       <Header />
       <div className="flex flex-col md:flex-row md:justify-between items-center bg-black my-3 p-4 md:p-8 rounded-xl md:rounded-2xl shadow-lg">
-        <h2 className="text-5xl font-bold text-white mb-2 md:mb-0">Duggu</h2>
+        <h2 className="text-3xl md:text-5xl font-bold text-white mb-2 md:mb-0">Duggu</h2>
         <p className="text-base md:text-2xl text-white text-center md:text-right font-semibold">
           An <span className="text-[#611AA1]">AI Story Telling device</span>
           <span className="hidden md:inline">
@@ -81,7 +81,7 @@ export default function Duggu() {
           <img
             src={DugguFace}
             alt="Duggu Face"
-            className="w-[40vw] max-h-[75vh] object-contain rounded-xl md:rounded-2xl"
+            className="w-[25vw] max-h-[25vh] object-contain rounded-xl md:rounded-2xl"
           />
         </div>
 
@@ -231,7 +231,7 @@ export default function Duggu() {
         className="w-full h-auto mt-5 rounded-xl md:rounded-2xl shadow-lg"
       />
 
-      <div className="flex justify-center items-center bg-black my-4 p-8 rounded-3xl shadow-lg text-xl font-bold">
+      <div className="flex justify-center items-center bg-black my-4 p-8 rounded-xl md:rounded-3xl shadow-lg text-xl font-bold">
         <span>Sweet Dreams</span>
       </div>
 
