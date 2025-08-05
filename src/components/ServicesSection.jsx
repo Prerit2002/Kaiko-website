@@ -71,15 +71,15 @@ const ServicesSection = () => {
             </div>
               
             {/* </span> */}
-            <div>
-              <span className="text-clash text-left break-words sm:text-right text-[8px] md:text-[10px] sm:text-xs lg:text-sm text-white/95 leading-tight max-w-xs sm:max-w-none drop-shadow-[1px_1px_2px_rgba(0,0,0,0.8)] bg-black/30 backdrop-blur-sm md:px-2 md:py-1 rounded ">
-              © COPYRIGHT AND POWERED <br className="md:hidden" /> BY KAIKO STUDIOS LLP
-            </span>
-            </div>
+            <div className="flex justify-center md:justify-start">
+  <span className="text-clash text-center md:text-left break-words text-[8px] md:text-[10px] sm:text-xs lg:text-sm text-white/95 leading-tight max-w-xs sm:max-w-none drop-shadow-[1px_1px_2px_rgba(0,0,0,0.8)] bg-black/30 backdrop-blur-sm md:px-2 md:py-1 rounded">
+    © COPYRIGHT AND POWERED <br className="md:hidden" /> BY KAIKO STUDIOS LLP
+  </span>
+</div>
             
              <div className="md:hidden  ">
               <div
-                className=" p-2.5 sm:p-3 rounded-full cursor-pointer hover:bg-yellow-300 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-110 hover:rotate-12"
+                className=" px-3 pt-3 rounded-full cursor-pointer hover:bg-yellow-300 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-110 hover:rotate-12"
                 onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                 aria-label="Scroll to top"
               >
