@@ -18,7 +18,7 @@ import Bartender from './components/Bartender';
 import Careers from './components/Careers';
 import About from './components/About';
 import SplashScreen from './components/SplashScreen';
-import Logo2 from './assets/Logo.png';
+import Bluequestionmark from './assets/Bluequestionmark.png';
 import './App.css';
 
 function HomePage() {
@@ -48,7 +48,7 @@ function HomePage() {
 function App() {
   return (
     <Router style={{ backgroundColor: '#151515' }}>
-      <SplashScreen imageSrc={Logo2} duration={2} />
+      <SplashScreen imageSrc={Bluequestionmark} duration={2} />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/career" element={<Careers />} />
