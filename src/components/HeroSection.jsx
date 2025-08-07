@@ -135,7 +135,7 @@ const HeroSection = () => {
               EVERY STEP IS A <span className="md:hidden">STEP TOWARD</span>
             </span>
             <span className="block text-center md:text-right">
-              <span className="hidden md:block">STEP TOWARD</span> YOUR GOALS
+              <span className="hidden md:inline">STEP TOWARD</span> YOUR GOALS
             </span>
           </h1>
         </div>
