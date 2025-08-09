@@ -19,7 +19,7 @@ import Careers from "./components/Careers";
 import About from "./components/About";
 import SplashScreen from "./components/SplashScreen";
 import Bluequestionmark from "./assets/Bluequestionmark.png";
-import { HelmetProvider } from "react-helmet-async";
+import { Helmet,HelmetProvider } from "react-helmet-async";
 import "./App.css";
 
 function HomePage() {
@@ -52,6 +52,38 @@ function HomePage() {
 function App() {
   return (
     <HelmetProvider>
+      <Helmet>
+        <title>The Kaiko Studios</title>
+        <meta
+          name="description"
+          content="Bold ideas, cheeky strategy, and scroll-stopping design. Kaiko Studios is a creative branding and marketing agency that builds identities, websites, and content that ask why—and answer with wow. Curious? You’re exactly who we wanted."
+        />
+
+        {/* Open Graph */}
+        <meta property="og:title" content="The Kaiko Studios" />
+        <meta
+          property="og:description"
+          content="We build bold, animated, and interactive websites."
+        />
+        <meta
+          property="og:image"
+          content="https://thekaikostudios.com/social-cover.png"
+        />
+        <meta property="og:url" content="https://thekaikostudios.com" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="The Kaiko Studios" />
+        <meta
+          name="twitter:description"
+          content="Bold ideas, cheeky strategy, and scroll-stopping design. Kaiko Studios is a creative branding and marketing agency that builds identities, websites, and content that ask why—and answer with wow. Curious? You’re exactly who we wanted."
+        />
+        <meta
+          name="twitter:image"
+          content="https://thekaikostudios.com/social-cover.png"
+        />
+      </Helmet>
       <Router>
         <div style={{ backgroundColor: "#151515" }}>
           <SplashScreen imageSrc={Bluequestionmark} duration={2} />

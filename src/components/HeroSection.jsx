@@ -130,7 +130,7 @@ const HeroSection = () => {
     <div className="relative h-[8rem] md:h-[14rem] flex flex-col items-center justify-center px-4 md:px-12 ">
       <div className=" text-xl md:text-4xl lg:text-5xl w-full">
         <div>
-          <h1 className="text-yellow-300 font-bold text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl leading-tight tracking-wide">
+          <h1 className="text-yellow-300 font-bold text-xl sm:text-3xl md:text-4xl lg:text-5xl  leading-tight tracking-wide">
             <span className="block text-center md:text-left mb-2 sm:mb-4">
               EVERY STEP IS A <span className="md:hidden">STEP TOWARD</span>
             </span>
