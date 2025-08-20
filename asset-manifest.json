@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.159e3735.css",
-    "main.js": "/static/js/main.4a3e66f8.js",
+    "main.js": "/static/js/main.0877d398.js",
     "static/js/453.aaadedc8.chunk.js": "/static/js/453.aaadedc8.chunk.js",
     "static/media/clodor.mp4": "/static/media/clodor.60cbe2eceef8f9d32ec9.mp4",
     "static/media/basantiforkaiko.mp4": "/static/media/basantiforkaiko.43a44ed40ecb9b2018a9.mp4",
@@ -9,6 +9,7 @@
     "static/media/logoreveal.mp4": "/static/media/logoreveal.5d7198b1b101794343bd.mp4",
     "static/media/Introvideo.mp4": "/static/media/Introvideo.f6eaab42d337d574a4e8.mp4",
     "static/media/clenzianimals.mp4": "/static/media/clenzianimals.bbf5c59fe5719c071027.mp4",
+    "static/media/Clenzivideo.mp4": "/static/media/Clenzivideo.bf984d00b03a2e921721.mp4",
     "static/media/ShikharUrvi.jpg": "/static/media/ShikharUrvi.dfaa0f255a45c419cc03.jpg",
     "static/media/POPCORNMOCKUPS1.png": "/static/media/POPCORNMOCKUPS1.d2fd62b921735499124d.png",
     "static/media/vertical1.png": "/static/media/vertical1.4e313dc11f5fde5af956.png",
@@ -79,11 +80,11 @@
     "static/media/clenzielements.png": "/static/media/clenzielements.cead4f6ae8165b6dcbf2.png",
     "index.html": "/index.html",
     "main.159e3735.css.map": "/static/css/main.159e3735.css.map",
-    "main.4a3e66f8.js.map": "/static/js/main.4a3e66f8.js.map",
+    "main.0877d398.js.map": "/static/js/main.0877d398.js.map",
     "453.aaadedc8.chunk.js.map": "/static/js/453.aaadedc8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.159e3735.css",
-    "static/js/main.4a3e66f8.js"
+    "static/js/main.0877d398.js"
   ]
 }
