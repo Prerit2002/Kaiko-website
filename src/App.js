@@ -20,6 +20,9 @@ import About from "./components/About";
 import SplashScreen from "./components/SplashScreen";
 import Bluequestionmark from "./assets/Bluequestionmark.png";
 import { Helmet,HelmetProvider } from "react-helmet-async";
+import ContactForm from "./components/ContactForm";
+import LightboxForm from "./components/LightboxForm";
+import Coffee from "./components/coffee";
 import "./App.css";
 
 function HomePage() {
@@ -35,6 +38,7 @@ function HomePage() {
           <h1>Namaste</h1>
         </div>
         <CreativeApproachSection />
+        <Coffee />
         <OurMojoSection />
         <HeroSection />
         <ShowcaseSection />
@@ -43,6 +47,8 @@ function HomePage() {
         <CollaborativeDesignProcess />
         <WeirdSnake /> */}
         {/* <Jobs /> */}
+        <ContactForm />
+        <LightboxForm />
         <ServicesSection />
       </section>
     </div>
